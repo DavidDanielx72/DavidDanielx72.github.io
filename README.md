@@ -13,6 +13,18 @@ I am a motivated and dedicated third-year student at the Cape Peninsula Universi
 
 ---
 
+## 🎓 Education
+
+### Cape Peninsula University of Technology
+Diploma in Information and Communication Technology in Applications Development  
+**2024 – Present**
+
+### Zwaanswyk High School
+National Senior Certificate  
+**2019 – 2023**
+
+---
+
 ## 💼 Work Experience
 
 ### Rietfontein Ladismith Guest Farm – Website Update  
@@ -52,18 +64,6 @@ I am a motivated and dedicated third-year student at the Cape Peninsula Universi
 - Built using HTML, CSS, JavaScript  
 - Includes structured layout and interactive elements  
 - Optimized for usability  
-
----
-
-## 🎓 Education
-
-### Cape Peninsula University of Technology
-Diploma in Information and Communication Technology in Applications Development  
-**2024 – Present**
-
-### Zwaanswyk High School
-National Senior Certificate  
-**2019 – 2023**
 
 ---
 
