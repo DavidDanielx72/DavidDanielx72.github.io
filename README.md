@@ -90,3 +90,14 @@ aconcession@woolworths.co.za
 - Dane Meyer (General Manager at
 Cape Town DHL Stadium)
 Contact details: 063 691 0436
+
+---
+
+## 🎥 Mock Interview Video
+
+<iframe width="640" height="360"
+src="https://www.youtube.com/embed/ZQn11TBY3bs"
+title="Mock Interview Video" frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
