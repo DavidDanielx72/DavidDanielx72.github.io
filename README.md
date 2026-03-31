@@ -1,6 +1,6 @@
 # David Daniel Sepkitt
 
-## 📞 Contact Details
+##Contact Details
 - Phone: 083 236 1787  
 - Alternate: 073 230 1377  
 - Email: 240046935@mycput.ac.za  
@@ -8,12 +8,12 @@
 
 ---
 
-## 🎯 Career Objective
+## Career Objective
 I am a motivated and dedicated third-year student at the Cape Peninsula University of Technology studying a Diploma in Information and Communication Technology in Applications Development. I am seeking a Work Integrated Learning (WIL) opportunity within the software development field. I have foundational knowledge in Java, JavaScript, HTML, and CSS, as well as experience in website development through updating and improving a business website. I am interested in developing my skills in both front-end and back-end development, with the goal of becoming a well-rounded Full Stack Developer.
 
 ---
 
-## 🎓 Education
+## Education
 
 ### Cape Peninsula University of Technology
 Diploma in Information and Communication Technology in Applications Development  
@@ -25,7 +25,7 @@ National Senior Certificate
 
 ---
 
-## 💼 Work Experience
+## Work Experience
 
 ### Rietfontein Ladismith Guest Farm – Website Update  
 **January 2026 (3 weeks)**  
@@ -47,7 +47,7 @@ National Senior Certificate
 
 ---
 
-## 🚀 Projects
+## Projects
 
 ### Catering Business Website (2026 – Present)
 - Full-stack group project for a real client  
@@ -67,7 +67,7 @@ National Senior Certificate
 
 ---
 
-## 🛠️ Technical Skills
+## Technical Skills
 - Java  
 - JavaScript  
 - HTML & CSS  
@@ -78,7 +78,7 @@ National Senior Certificate
 
 ---
 
-## 📌 References
+## References
 - Anthony (General Manager at
 Rietfontein Guest Farm)
 Contact Details: 084 712 5561 |
@@ -93,7 +93,7 @@ Contact details: 063 691 0436
 
 ---
 
-## 🎥 Mock Interview Video
+## Mock Interview Video
 
 <video width="640" height="360" controls>
   <source src="videos/Interview.mp4" type="video/mp4">
