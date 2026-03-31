@@ -95,9 +95,6 @@ Contact details: 063 691 0436
 
 ## 🎥 Mock Interview Video
 
-<iframe width="640" height="360"
-src="https://www.youtube.com/embed/ZQn11TBY3bs"
-title="Mock Interview Video" frameborder="0"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>
-</iframe>
+<video width="640" height="360" controls>
+  <source src="videos/David_Sepkitt_Mock_Interview.mp4" type="video/mp4">
+</video>
