@@ -1,6 +1,6 @@
 # David Daniel Sepkitt
 
-##Contact Details
+## Contact Details
 - Phone: 083 236 1787  
 - Alternate: 073 230 1377  
 - Email: 240046935@mycput.ac.za  
