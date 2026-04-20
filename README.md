@@ -98,3 +98,53 @@ Contact details: 063 691 0436
 <video width="640" height="360" controls>
   <source src="videos/Interview.mp4" type="video/mp4">
 </video>
+
+---
+
+# Reflections (STAR Method)
+
+## Markdown Coding Reflection
+
+**Situation:**  
+I was required to create a GitHub portfolio using Markdown.
+
+**Task:**  
+I needed to present my work clearly and professionally.
+
+**Action:**  
+I learned Markdown syntax including headings, links, and formatting. I applied consistent structure across all files.
+
+**Result:**  
+I created a well-structured portfolio that is easy to read and navigate.
+
+---
+
+##  Mock Interview Reflection
+
+**Situation:**  
+I participated in a mock interview as part of work readiness training.
+
+**Task:**  
+I needed to answer questions professionally and confidently.
+
+**Action:**  
+I practiced interview questions and recorded my responses.
+
+**Result:**  
+I improved my confidence and communication skills.
+
+---
+
+## GitHub Pages Reflection
+
+**Situation:**  
+I needed to publish my portfolio online.
+
+**Task:**  
+I had to deploy my work using GitHub Pages.
+
+**Action:**  
+I configured repository settings and ensured all links worked correctly.
+
+**Result:**  
+I successfully published a live portfolio that can be shared with others.
