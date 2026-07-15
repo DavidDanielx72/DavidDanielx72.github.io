@@ -37,30 +37,39 @@
         }
 
         /* ============================
-           MOUSE GLOW (follows cursor)
+           MOUSE GLOW (brighter & wider)
         ============================ */
         #mouse-glow {
             position: fixed;
             top: 0;
             left: 0;
-            width: 600px;
-            height: 600px;
+            width: 900px;
+            height: 900px;
             border-radius: 50%;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.12), rgba(139, 92, 246, 0.06) 40%, transparent 70%);
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.25) 0%, rgba(139, 92, 246, 0.15) 30%, rgba(6, 182, 212, 0.08) 50%, transparent 75%);
             pointer-events: none;
             transform: translate(-50%, -50%);
             z-index: 0;
             transition: opacity 0.2s ease;
             will-change: transform;
-            filter: blur(10px);
+            filter: blur(20px);
         }
 
         #mouse-glow.secondary {
-            width: 400px;
-            height: 400px;
-            background: radial-gradient(circle, rgba(6, 182, 212, 0.08), rgba(236, 72, 153, 0.04) 40%, transparent 70%);
+            width: 700px;
+            height: 700px;
+            background: radial-gradient(circle, rgba(236, 72, 153, 0.15) 0%, rgba(139, 92, 246, 0.10) 30%, rgba(59, 130, 246, 0.05) 50%, transparent 75%);
             transition: transform 0.15s ease-out;
-            filter: blur(15px);
+            filter: blur(30px);
+        }
+
+        /* tertiary glow for extra spread */
+        #mouse-glow.tertiary {
+            width: 1100px;
+            height: 1100px;
+            background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, rgba(59, 130, 246, 0.05) 30%, transparent 70%);
+            filter: blur(40px);
+            transition: transform 0.2s ease-out;
         }
 
         /* ensure all content is above glow */
@@ -186,7 +195,7 @@
             right: -10%;
             width: 600px;
             height: 600px;
-            background: radial-gradient(circle, rgba(59, 130, 246, 0.08), transparent 70%);
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.12), transparent 70%);
             border-radius: 50%;
             animation: floatGlow 12s ease-in-out infinite alternate;
             pointer-events: none;
@@ -200,7 +209,7 @@
             left: -10%;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(139, 92, 246, 0.06), transparent 70%);
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.10), transparent 70%);
             border-radius: 50%;
             animation: floatGlow 15s ease-in-out infinite alternate-reverse;
             pointer-events: none;
@@ -716,12 +725,16 @@
             }
 
             #mouse-glow {
-                width: 300px;
-                height: 300px;
+                width: 500px;
+                height: 500px;
             }
             #mouse-glow.secondary {
-                width: 200px;
-                height: 200px;
+                width: 400px;
+                height: 400px;
+            }
+            #mouse-glow.tertiary {
+                width: 600px;
+                height: 600px;
             }
         }
 
@@ -738,15 +751,28 @@
                 width: 100%;
                 text-align: center;
             }
+            #mouse-glow {
+                width: 350px;
+                height: 350px;
+            }
+            #mouse-glow.secondary {
+                width: 280px;
+                height: 280px;
+            }
+            #mouse-glow.tertiary {
+                width: 450px;
+                height: 450px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <!-- ===== MOUSE GLOW ELEMENTS ===== -->
+    <!-- ===== MOUSE GLOW ELEMENTS (brighter & wider) ===== -->
     <div id="mouse-glow"></div>
     <div id="mouse-glow" class="secondary"></div>
+    <div id="mouse-glow" class="tertiary"></div>
 
     <header id="header">
         <nav class="navbar">
@@ -997,10 +1023,11 @@
         });
 
         // ================================
-        // MOUSE GLOW (follows cursor)
+        // MOUSE GLOW (brighter & wider)
         // ================================
         const glowMain = document.getElementById('mouse-glow');
         const glowSecondary = document.querySelector('.secondary');
+        const glowTertiary = document.querySelector('.tertiary');
 
         let mouseX = -1000;
         let mouseY = -1000;
@@ -1019,11 +1046,15 @@
             currentX += (mouseX - currentX) * 0.08;
             currentY += (mouseY - currentY) * 0.08;
 
+            // Offset for each glow layer
             if (glowMain) {
-                glowMain.style.transform = `translate(${currentX - 300}px, ${currentY - 300}px)`;
+                glowMain.style.transform = `translate(${currentX - 450}px, ${currentY - 450}px)`;
             }
             if (glowSecondary) {
-                glowSecondary.style.transform = `translate(${currentX - 200}px, ${currentY - 200}px)`;
+                glowSecondary.style.transform = `translate(${currentX - 350}px, ${currentY - 350}px)`;
+            }
+            if (glowTertiary) {
+                glowTertiary.style.transform = `translate(${currentX - 550}px, ${currentY - 550}px)`;
             }
 
             requestAnimationFrame(updateGlow);
@@ -1032,7 +1063,7 @@
         // Start the glow animation loop
         updateGlow();
 
-        // Hide glow when mouse leaves window (optional)
+        // Hide glow when mouse leaves window
         document.addEventListener('mouseleave', () => {
             mouseX = -1000;
             mouseY = -1000;
@@ -1063,7 +1094,7 @@
             year.textContent = new Date().getFullYear();
         }
 
-        console.log("✨ Portfolio upgraded with mouse-following glow effect!");
+        console.log("✨ Portfolio upgraded with brighter, wider mouse-following glow!");
     </script>
 
 </body>
