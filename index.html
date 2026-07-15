@@ -14,35 +14,374 @@
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
     <style>
-        /* additional minimal tweaks – keep your styles intact */
+        /* ============================
+           GOOGLE FONT & RESET (kept all original styles)
+        ============================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #030712;
+            color: #F8FAFC;
+            overflow-x: hidden;
+        }
+
+        /* ============================
+           COLOUR VARIABLES (extended)
+        ============================ */
+        :root {
+            --background: #030712;
+            --surface: #111827;
+            --card: rgba(255, 255, 255, .05);
+
+            --blue: #3B82F6;
+            --purple: #8B5CF6;
+            --cyan: #06B6D4;
+            --pink: #EC4899;
+            --indigo: #6366F1;
+
+            --white: #F8FAFC;
+            --grey: #94A3B8;
+        }
+
+        /* ============================
+           NAVBAR
+        ============================ */
+        header {
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(18px);
+            background: rgba(3, 7, 18, .75);
+            border-bottom: 1px solid rgba(255, 255, 255, .08);
+            transition: background 0.4s, box-shadow 0.4s;
+        }
+
+        header.scrolled {
+            background: rgba(3, 7, 18, .95);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo span {
+            color: var(--blue);
+            -webkit-text-fill-color: var(--blue);
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: .3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--blue), var(--purple));
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--blue);
+        }
+
+        /* ============================
+           HERO
+        ============================ */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 120px 20px;
+            position: relative;
+        }
+
+        /* Animated background glow */
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15), transparent 70%);
+            border-radius: 50%;
+            animation: floatGlow 12s ease-in-out infinite alternate;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -20%;
+            left: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.12), transparent 70%);
+            border-radius: 50%;
+            animation: floatGlow 15s ease-in-out infinite alternate-reverse;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        @keyframes floatGlow {
+            0% {
+                transform: translate(0, 0) scale(1);
+            }
+            100% {
+                transform: translate(40px, 30px) scale(1.2);
+            }
+        }
+
+        .hero-content {
+            width: 55%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro {
+            color: var(--cyan);
+            font-weight: 600;
+            margin-bottom: 15px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            animation: fadeInUp 0.8s ease 0.1s both;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--blue), var(--purple), var(--pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            animation: shimmer 4s ease-in-out infinite;
+        }
+
+        @keyframes shimmer {
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+
+        .hero h2 {
+            color: var(--grey);
+            margin-bottom: 25px;
+            font-weight: 500;
+            animation: fadeInUp 0.8s ease 0.2s both;
+        }
+
+        .summary {
+            color: var(--grey);
+            line-height: 1.8;
+            max-width: 600px;
+            margin-bottom: 35px;
+            animation: fadeInUp 0.8s ease 0.3s both;
+        }
+
+        /* ============================
+           BUTTONS
+        ============================ */
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            animation: fadeInUp 0.8s ease 0.4s both;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            padding: 15px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: .3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--blue), var(--purple));
+            color: white;
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 0 50px rgba(59, 130, 246, 0.5);
+        }
+
+        .btn-secondary {
+            border: 1px solid rgba(255, 255, 255, .15);
+            color: white;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, .1);
+            transform: translateY(-4px);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+        }
+
+        /* ============================
+           TECH CARDS
+        ============================ */
+        .hero-tech {
+            width: 40%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tech-card {
+            padding: 22px;
+            text-align: center;
+            border-radius: 18px;
+            background: var(--card);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, .08);
+            transition: .35s;
+            cursor: default;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tech-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.1), transparent 60%);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .tech-card:hover::before {
+            opacity: 1;
+        }
+
+        .tech-card:hover {
+            transform: translateY(-8px) scale(1.02);
+            border-color: var(--blue);
+            box-shadow: 0 0 40px rgba(59, 130, 246, .25);
+        }
+
+        /* ============================
+           SECTION COMMON
+        ============================ */
         .section-padding {
             padding: 4rem 0;
+            position: relative;
         }
+
+        .section-padding:nth-child(even) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
+
         .grid-2col {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 2.5rem;
         }
+
+        /* ============================
+           INFO BOXES
+        ============================ */
         .info-box {
             background: var(--card);
-            border: 1px solid rgba(255,255,255,0.08);
+            border: 1px solid rgba(255, 255, 255, 0.08);
             border-radius: 20px;
             padding: 1.5rem 1.8rem;
             backdrop-filter: blur(4px);
-            transition: 0.25s;
+            transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
         }
+
+        .info-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.03), rgba(139, 92, 246, 0.03));
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .info-box:hover::before {
+            opacity: 1;
+        }
+
         .info-box:hover {
-            border-color: var(--blue);
-            box-shadow: 0 0 25px rgba(59,130,246,0.15);
+            border-color: rgba(59, 130, 246, 0.3);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3), 0 0 30px rgba(59, 130, 246, 0.05);
         }
+
         .info-box h3 {
             font-size: 1.25rem;
             margin-bottom: 0.75rem;
@@ -51,104 +390,308 @@
             gap: 0.5rem;
             color: var(--white);
         }
+
         .info-box h3 i {
             color: var(--cyan);
+            filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.3));
         }
-        .info-box ul, .info-box p {
+
+        .info-box ul,
+        .info-box p {
             color: var(--grey);
             line-height: 1.7;
             font-size: 0.98rem;
         }
+
         .info-box ul {
             list-style: none;
             padding-left: 0;
         }
+
         .info-box ul li {
             margin-bottom: 0.3rem;
             padding-left: 1.2rem;
             position: relative;
         }
+
         .info-box ul li::before {
             content: "▹";
             color: var(--blue);
             position: absolute;
             left: 0;
         }
+
         .chip-group {
             display: flex;
             flex-wrap: wrap;
             gap: 0.6rem 0.8rem;
             margin-top: 0.4rem;
         }
+
         .chip {
-            background: rgba(59,130,246,0.15);
-            border: 1px solid rgba(59,130,246,0.25);
+            background: rgba(59, 130, 246, 0.12);
+            border: 1px solid rgba(59, 130, 246, 0.2);
             padding: 0.25rem 1rem;
             border-radius: 30px;
             font-size: 0.8rem;
             color: var(--grey);
-            transition: 0.2s;
+            transition: 0.3s;
+            cursor: default;
         }
+
         .chip:hover {
-            background: rgba(59,130,246,0.25);
+            background: rgba(59, 130, 246, 0.25);
             color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.15);
         }
+
+        /* ============================
+           REFERENCE CARDS
+        ============================ */
         .ref-card {
             background: var(--card);
             border-radius: 16px;
             padding: 1rem 1.5rem;
             margin-bottom: 0.75rem;
             border-left: 3px solid var(--blue);
+            transition: 0.3s;
+            position: relative;
+            overflow: hidden;
         }
+
+        .ref-card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.05), transparent 60%);
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+
+        .ref-card:hover::after {
+            opacity: 1;
+        }
+
+        .ref-card:hover {
+            transform: translateX(6px);
+            border-left-color: var(--purple);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.05);
+        }
+
         .ref-card strong {
             color: var(--white);
         }
+
         .ref-card small {
             color: var(--grey);
             display: block;
             margin-top: 0.2rem;
             font-size: 0.85rem;
         }
+
+        /* ============================
+           BUTTON SMALL
+        ============================ */
         .btn-small {
             padding: 0.3rem 1rem;
             font-size: 0.8rem;
             border-radius: 40px;
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.1);
             color: var(--grey);
             text-decoration: none;
-            transition: 0.2s;
+            transition: 0.3s;
             display: inline-flex;
             align-items: center;
             gap: 0.4rem;
         }
+
         .btn-small:hover {
             background: var(--blue);
             color: white;
             border-color: var(--blue);
+            transform: translateY(-2px);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.2);
         }
+
+        /* ============================
+           PROJECT LINKS
+        ============================ */
         .project-links {
             display: flex;
             flex-wrap: wrap;
             gap: 0.8rem 1.2rem;
             margin-top: 0.5rem;
         }
+
         .project-links a {
             color: var(--cyan);
             text-decoration: none;
             font-weight: 500;
             font-size: 0.9rem;
             border-bottom: 1px solid transparent;
-            transition: 0.2s;
+            transition: 0.3s;
+            position: relative;
         }
+
+        .project-links a::after {
+            content: '→';
+            margin-left: 4px;
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+
         .project-links a:hover {
-            border-bottom-color: var(--cyan);
             color: white;
+            border-bottom-color: var(--cyan);
         }
-        @media (max-width: 800px) {
+
+        .project-links a:hover::after {
+            transform: translateX(4px);
+        }
+
+        /* ============================
+           SECTION TITLES
+        ============================ */
+        .section-title {
+            font-size: 2.2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .section-title .accent {
+            color: var(--cyan);
+        }
+
+        /* ============================
+           FOOTER
+        ============================ */
+        footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding: 2rem 0;
+            text-align: center;
+            color: var(--grey);
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--grey);
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--blue);
+        }
+
+        footer .heart {
+            color: var(--pink);
+            display: inline-block;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%,
+            100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        /* ============================
+           ANIMATIONS
+        ============================ */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* scroll reveal */
+        .hidden {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        .hidden.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================
+           RESPONSIVE
+        ============================ */
+        @media (max-width: 900px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 150px;
+            }
+
+            .hero-content {
+                width: 100%;
+            }
+
+            .summary {
+                margin: auto;
+                margin-bottom: 35px;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-tech {
+                width: 100%;
+                margin-top: 60px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
             .grid-2col {
                 grid-template-columns: 1fr;
                 gap: 1.5rem;
+            }
+
+            .hero::before,
+            .hero::after {
+                width: 300px;
+                height: 300px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                text-align: center;
             }
         }
     </style>
@@ -156,259 +699,284 @@
 
 <body>
 
-<header>
-    <nav class="navbar">
-        <div class="logo">David<span>.</span></div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">David<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- HERO / HOME -->
-<section id="home" class="hero">
-    <div class="hero-content">
-        <p class="intro">👋 Hello, I'm</p>
-        <h1>David Daniel <span>Sepkitt</span></h1>
-        <h2>Aspiring Full Stack Software Developer</h2>
-        <p class="summary">
-            Application Development student at CPUT with a passion for building practical, user-focused solutions 
-            and continuously expanding my technical knowledge. I bring a strong work ethic, adaptability, 
-            problem-solving skills, and the ability to collaborate effectively while writing clean, efficient code. 
-            I am committed to making a meaningful contribution to every team I join and am driven by the opportunity 
-            to use technology to create innovative solutions. My goal is to grow into a full-time Full Stack Software 
-            Developer and contribute to building the technologies of the future.
-        </p>
-        <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">View Projects</a>
-            <a href="#" class="btn-secondary" target="_blank">Download CV</a>
-        </div>
-        <!-- online presence inline -->
-        <div style="margin-top: 2rem; display: flex; gap: 1.2rem; flex-wrap: wrap;">
-            <a href="https://github.com/DavidDanielx72" target="_blank" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank" class="btn-small"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-            <a href="https://rietfontein.co.za/" target="_blank" class="btn-small"><i class="fas fa-globe"></i> Rietfontein</a>
-        </div>
-    </div>
-
-    <div class="hero-tech">
-        <div class="tech-card">Java</div>
-        <div class="tech-card">JavaScript</div>
-        <div class="tech-card">HTML5</div>
-        <div class="tech-card">CSS3</div>
-        <div class="tech-card">React</div>
-        <div class="tech-card">SQL</div>
-        <div class="tech-card">GitHub</div>
-        <div class="tech-card">Supabase</div>
-    </div>
-</section>
-
-<!-- ===== ABOUT / PERSONAL DETAILS ===== -->
-<section id="about" class="section-padding" style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05);">
-    <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
-            <span style="color: var(--cyan);">//</span> About Me
-        </h2>
-        <div class="grid-2col">
-            <div class="info-box">
-                <h3><i class="fas fa-user"></i> Personal</h3>
-                <ul>
-                    <li><strong>Age:</strong> 20 years old</li>
-                    <li><strong>Location:</strong> Cape Town, Western Cape</li>
-                    <li><strong>Languages:</strong> English, Afrikaans</li>
-                    <li><strong>Driver's License:</strong> No</li>
-                </ul>
-                <div style="margin-top: 1rem;">
-                    <span class="chip"><i class="fas fa-map-pin"></i> Cape Town</span>
-                    <span class="chip"><i class="fas fa-language"></i> English / Afrikaans</span>
-                </div>
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="intro">👋 Hello, I'm</p>
+            <h1>David Daniel <span>Sepkitt</span></h1>
+            <h2>Aspiring Full Stack Software Developer</h2>
+            <p class="summary">
+                Application Development student at CPUT with a passion for building practical, user-focused solutions
+                and continuously expanding my technical knowledge. I bring a strong work ethic, adaptability,
+                problem-solving skills, and the ability to collaborate effectively while writing clean, efficient code.
+                I am committed to making a meaningful contribution to every team I join and am driven by the opportunity
+                to use technology to create innovative solutions. My goal is to grow into a full-time Full Stack Software
+                Developer and contribute to building the technologies of the future.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#" class="btn-secondary" target="_blank">Download CV</a>
             </div>
-            <div class="info-box">
-                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                <ul>
-                    <li><strong>Cape Peninsula University of Technology</strong><br>Diploma in ICT: Applications Development <span style="color: var(--grey);">(2024 – Present)</span></li>
-                    <li style="margin-top: 0.8rem;"><strong>Zwaanswyk High School</strong><br>National Senior Certificate <span style="color: var(--grey);">(2019 – 2023)</span></li>
-                </ul>
+            <div style="margin-top: 2rem; display: flex; gap: 1.2rem; flex-wrap: wrap;">
+                <a href="https://github.com/DavidDanielx72" target="_blank" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank" class="btn-small"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://rietfontein.co.za/" target="_blank" class="btn-small"><i class="fas fa-globe"></i> Rietfontein</a>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- ===== SKILLS ===== -->
-<section id="skills" class="section-padding">
-    <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
-            <span style="color: var(--cyan);">//</span> Technical Proficiencies
-        </h2>
-        <div class="grid-2col">
-            <div class="info-box">
-                <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
-                <div class="chip-group">
-                    <span class="chip">Java</span>
-                    <span class="chip">JavaScript</span>
-                    <span class="chip">HTML5</span>
-                    <span class="chip">CSS3</span>
-                    <span class="chip">React</span>
-                    <span class="chip">WordPress</span>
+        <div class="hero-tech">
+            <div class="tech-card">Java</div>
+            <div class="tech-card">JavaScript</div>
+            <div class="tech-card">HTML5</div>
+            <div class="tech-card">CSS3</div>
+            <div class="tech-card">React</div>
+            <div class="tech-card">SQL</div>
+            <div class="tech-card">GitHub</div>
+            <div class="tech-card">Supabase</div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section-padding hidden">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">//</span> About Me</h2>
+            <div class="grid-2col">
+                <div class="info-box">
+                    <h3><i class="fas fa-user"></i> Personal</h3>
+                    <ul>
+                        <li><strong>Age:</strong> 20 years old</li>
+                        <li><strong>Location:</strong> Cape Town, Western Cape</li>
+                        <li><strong>Languages:</strong> English, Afrikaans</li>
+                        <li><strong>Driver's License:</strong> No</li>
+                    </ul>
+                    <div style="margin-top: 1rem;">
+                        <span class="chip"><i class="fas fa-map-pin"></i> Cape Town</span>
+                        <span class="chip"><i class="fas fa-language"></i> English / Afrikaans</span>
+                    </div>
                 </div>
-                <h3 style="margin-top: 1.2rem;"><i class="fas fa-database"></i> Database & Tools</h3>
-                <div class="chip-group">
-                    <span class="chip">SQL</span>
-                    <span class="chip">Supabase</span>
-                    <span class="chip">Database Design</span>
-                    <span class="chip">GitHub</span>
-                    <span class="chip">VS Code</span>
-                    <span class="chip">NetBeans</span>
-                    <span class="chip">IntelliJ IDEA</span>
-                </div>
-                <h3 style="margin-top: 1.2rem;"><i class="fas fa-users"></i> Soft Skills</h3>
-                <div class="chip-group">
-                    <span class="chip">Problem-solving</span>
-                    <span class="chip">Analytical thinking</span>
-                    <span class="chip">Communication</span>
-                    <span class="chip">Teamwork</span>
-                    <span class="chip">Time management</span>
-                    <span class="chip">Adaptability</span>
-                    <span class="chip">Willingness to learn</span>
-                    <span class="chip">Attention to detail</span>
-                </div>
-            </div>
-            <div class="info-box">
-                <h3><i class="fas fa-heart"></i> Interests</h3>
-                <ul>
-                    <li>Exploring emerging technologies, particularly Artificial Intelligence</li>
-                    <li>Music and Technology</li>
-                </ul>
-                <div style="margin-top: 1.2rem;">
-                    <span class="chip"><i class="fas fa-robot"></i> AI</span>
-                    <span class="chip"><i class="fas fa-music"></i> Music</span>
-                    <span class="chip"><i class="fas fa-microchip"></i> Tech</span>
+                <div class="info-box">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <ul>
+                        <li><strong>Cape Peninsula University of Technology</strong><br>Diploma in ICT: Applications Development <span style="color: var(--grey);">(2024 – Present)</span></li>
+                        <li style="margin-top: 0.8rem;"><strong>Zwaanswyk High School</strong><br>National Senior Certificate <span style="color: var(--grey);">(2019 – 2023)</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== PROJECTS ===== -->
-<section id="projects" class="section-padding" style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05);">
-    <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
-            <span style="color: var(--cyan);">//</span> Projects
-        </h2>
-        <div class="grid-2col">
-            <div class="info-box">
-                <h3><i class="fas fa-robot"></i> AI_Chatbot</h3>
-                <p style="color: var(--grey);">Interactive chatbot project exploring AI-driven conversations.</p>
-                <div class="project-links">
-                    <a href="https://github.com/DavidDanielx72/AI_Chatbot" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section-padding hidden">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">//</span> Technical Proficiencies</h2>
+            <div class="grid-2col">
+                <div class="info-box">
+                    <h3><i class="fas fa-code"></i> Languages &amp; Frameworks</h3>
+                    <div class="chip-group">
+                        <span class="chip">Java</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">HTML5</span>
+                        <span class="chip">CSS3</span>
+                        <span class="chip">React</span>
+                        <span class="chip">WordPress</span>
+                    </div>
+                    <h3 style="margin-top: 1.2rem;"><i class="fas fa-database"></i> Database &amp; Tools</h3>
+                    <div class="chip-group">
+                        <span class="chip">SQL</span>
+                        <span class="chip">Supabase</span>
+                        <span class="chip">Database Design</span>
+                        <span class="chip">GitHub</span>
+                        <span class="chip">VS Code</span>
+                        <span class="chip">NetBeans</span>
+                        <span class="chip">IntelliJ IDEA</span>
+                    </div>
+                    <h3 style="margin-top: 1.2rem;"><i class="fas fa-users"></i> Soft Skills</h3>
+                    <div class="chip-group">
+                        <span class="chip">Problem-solving</span>
+                        <span class="chip">Analytical thinking</span>
+                        <span class="chip">Communication</span>
+                        <span class="chip">Teamwork</span>
+                        <span class="chip">Time management</span>
+                        <span class="chip">Adaptability</span>
+                        <span class="chip">Willingness to learn</span>
+                        <span class="chip">Attention to detail</span>
+                    </div>
                 </div>
-            </div>
-            <div class="info-box">
-                <h3><i class="fas fa-microchip"></i> iot-elective-project-2026-beep</h3>
-                <p style="color: var(--grey);">IoT elective project focusing on embedded systems and connectivity.</p>
-                <div class="project-links">
-                    <a href="https://github.com/DavidDanielx72/iot-elective-project-2026-beep" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                </div>
-            </div>
-            <div class="info-box" style="grid-column: 1 / -1;">
-                <h3><i class="fas fa-globe"></i> Rietfontein Guest Farm – Website Update</h3>
-                <p style="color: var(--grey);">Content & design updates for the Rietfontein website – improved structure, usability, and brand alignment.</p>
-                <div class="project-links">
-                    <a href="https://rietfontein.co.za/" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Site</a>
+                <div class="info-box">
+                    <h3><i class="fas fa-heart"></i> Interests</h3>
+                    <ul>
+                        <li>Exploring emerging technologies, particularly Artificial Intelligence</li>
+                        <li>Music and Technology</li>
+                    </ul>
+                    <div style="margin-top: 1.2rem;">
+                        <span class="chip"><i class="fas fa-robot"></i> AI</span>
+                        <span class="chip"><i class="fas fa-music"></i> Music</span>
+                        <span class="chip"><i class="fas fa-microchip"></i> Tech</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== EXPERIENCE ===== -->
-<section id="experience" class="section-padding">
-    <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
-            <span style="color: var(--cyan);">//</span> Work Experience
-        </h2>
-        <div class="grid-2col">
-            <div class="info-box">
-                <h3><i class="fas fa-pencil-alt"></i> Rietfontein Ladismith Guest Farm</h3>
-                <p><strong>Website Content & Design Updates</strong> <span style="color: var(--grey);">(Jan 2026 – Feb 2026)</span></p>
-                <ul>
-                    <li>Updated website content, business info, images, and page layouts to keep the site current and aligned with client needs.</li>
-                    <li>Improved structure, usability, and overall presentation while collaborating with the client to support brand and communication goals.</li>
-                </ul>
-                <div style="margin-top: 0.6rem;">
-                    <a href="https://rietfontein.co.za/" target="_blank" class="btn-small"><i class="fas fa-external-link-alt"></i> rietfontein.co.za</a>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section-padding hidden">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">//</span> Projects</h2>
+            <div class="grid-2col">
+                <div class="info-box">
+                    <h3><i class="fas fa-robot"></i> AI_Chatbot</h3>
+                    <p style="color: var(--grey);">Interactive chatbot project exploring AI-driven conversations.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/DavidDanielx72/AI_Chatbot" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3><i class="fas fa-microchip"></i> iot-elective-project-2026-beep</h3>
+                    <p style="color: var(--grey);">IoT elective project focusing on embedded systems and connectivity.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/DavidDanielx72/iot-elective-project-2026-beep" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <div class="info-box" style="grid-column: 1 / -1;">
+                    <h3><i class="fas fa-globe"></i> Rietfontein Guest Farm – Website Update</h3>
+                    <p style="color: var(--grey);">Content &amp; design updates for the Rietfontein website – improved structure, usability, and brand alignment.</p>
+                    <div class="project-links">
+                        <a href="https://rietfontein.co.za/" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Site</a>
+                    </div>
                 </div>
             </div>
-            <div class="info-box">
-                <h3><i class="fas fa-store"></i> Country Road Waterfront (Woolworths Group)</h3>
-                <p><strong>Seasonal Sales Consultant</strong> <span style="color: var(--grey);">(Dec 2025 – Jan 2026)</span></p>
-                <ul>
-                    <li>Provided customer service in menswear, assisting with product enquiries, purchases, and general needs.</li>
-                    <li>Maintained stock levels and merchandising standards while supporting daily store operations during the holiday season.</li>
-                </ul>
-            </div>
-            <div class="info-box" style="grid-column: 1 / -1;">
-                <h3><i class="fas fa-glass-cheers"></i> Cape Town DHL Stadium</h3>
-                <p><strong>Casual Bar Attendant</strong> <span style="color: var(--grey);">(Dec 2023 – Feb 2024)</span></p>
-                <ul>
-                    <li>Served alcoholic beverages and provided customer service during high-volume events, ensuring efficient and professional service.</li>
-                    <li>Assisted with stock replenishment and beverage transport, working accurately and calmly under pressure.</li>
-                </ul>
+        </div>
+    </section>
+
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section-padding hidden">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">//</span> Work Experience</h2>
+            <div class="grid-2col">
+                <div class="info-box">
+                    <h3><i class="fas fa-pencil-alt"></i> Rietfontein Ladismith Guest Farm</h3>
+                    <p><strong>Website Content &amp; Design Updates</strong> <span style="color: var(--grey);">(Jan 2026 – Feb 2026)</span></p>
+                    <ul>
+                        <li>Updated website content, business info, images, and page layouts to keep the site current and aligned with client needs.</li>
+                        <li>Improved structure, usability, and overall presentation while collaborating with the client to support brand and communication goals.</li>
+                    </ul>
+                    <div style="margin-top: 0.6rem;">
+                        <a href="https://rietfontein.co.za/" target="_blank" class="btn-small"><i class="fas fa-external-link-alt"></i> rietfontein.co.za</a>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <h3><i class="fas fa-store"></i> Country Road Waterfront (Woolworths Group)</h3>
+                    <p><strong>Seasonal Sales Consultant</strong> <span style="color: var(--grey);">(Dec 2025 – Jan 2026)</span></p>
+                    <ul>
+                        <li>Provided customer service in menswear, assisting with product enquiries, purchases, and general needs.</li>
+                        <li>Maintained stock levels and merchandising standards while supporting daily store operations during the holiday season.</li>
+                    </ul>
+                </div>
+                <div class="info-box" style="grid-column: 1 / -1;">
+                    <h3><i class="fas fa-glass-cheers"></i> Cape Town DHL Stadium</h3>
+                    <p><strong>Casual Bar Attendant</strong> <span style="color: var(--grey);">(Dec 2023 – Feb 2024)</span></p>
+                    <ul>
+                        <li>Served alcoholic beverages and provided customer service during high-volume events, ensuring efficient and professional service.</li>
+                        <li>Assisted with stock replenishment and beverage transport, working accurately and calmly under pressure.</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== REFERENCES ===== -->
-<section id="contact" class="section-padding" style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05);">
-    <div class="container">
-        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
-            <span style="color: var(--cyan);">//</span> References
-        </h2>
-        <div class="grid-2col">
-            <div class="ref-card">
-                <strong>Anthony Cronje</strong> <span style="color: var(--grey);">– General Manager, Rietfontein Guest Farm</span>
-                <small><i class="fas fa-phone"></i> 084 712 551 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> tonycronje@yahoo.co.uk</small>
-            </div>
-            <div class="ref-card">
-                <strong>Copy Khayalethu Tshemese</strong> <span style="color: var(--grey);">– Line Manager, Country Road Waterfront</span>
-                <small><i class="fas fa-phone"></i> 0684727323 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> aconcession@woolwoths.co.za</small>
-            </div>
-            <div class="ref-card" style="grid-column: 1 / -1; max-width: 600px;">
-                <strong>Dane Meyer</strong> <span style="color: var(--grey);">– General Manager, DHL Bar (Stadium)</span>
-                <small><i class="fas fa-phone"></i> 0636910436</small>
+    <!-- ===== REFERENCES / CONTACT ===== -->
+    <section id="contact" class="section-padding hidden">
+        <div class="container">
+            <h2 class="section-title"><span class="accent">//</span> References</h2>
+            <div class="grid-2col">
+                <div class="ref-card">
+                    <strong>Anthony Cronje</strong> <span style="color: var(--grey);">– General Manager, Rietfontein Guest Farm</span>
+                    <small><i class="fas fa-phone"></i> 084 712 551 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> tonycronje@yahoo.co.uk</small>
+                </div>
+                <div class="ref-card">
+                    <strong>Copy Khayalethu Tshemese</strong> <span style="color: var(--grey);">– Line Manager, Country Road Waterfront</span>
+                    <small><i class="fas fa-phone"></i> 0684727323 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> aconcession@woolwoths.co.za</small>
+                </div>
+                <div class="ref-card" style="grid-column: 1 / -1; max-width: 600px;">
+                    <strong>Dane Meyer</strong> <span style="color: var(--grey);">– General Manager, DHL Bar (Stadium)</span>
+                    <small><i class="fas fa-phone"></i> 0636910436</small>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== FOOTER ===== -->
-<footer style="border-top: 1px solid rgba(255,255,255,0.06); padding: 2rem 0; text-align: center; color: var(--grey); font-size: 0.9rem;">
-    <div class="container">
-        <p>&copy; <span id="year"></span> David Daniel Sepkitt. Built with <i class="fas fa-heart" style="color: var(--blue);"></i> in Cape Town.</p>
-        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 0.8rem; flex-wrap: wrap;">
-            <a href="https://github.com/DavidDanielx72" target="_blank" style="color: var(--grey);"><i class="fab fa-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank" style="color: var(--grey);"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
-            <a href="https://rietfontein.co.za/" target="_blank" style="color: var(--grey);"><i class="fas fa-globe"></i> Rietfontein</a>
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> David Daniel Sepkitt. Built with <span class="heart">❤</span> in Cape Town.</p>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 0.8rem; flex-wrap: wrap;">
+                <a href="https://github.com/DavidDanielx72" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                <a href="https://rietfontein.co.za/" target="_blank"><i class="fas fa-globe"></i> Rietfontein</a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<script src="script.js"></script>
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        // ================================
+        // PORTFOLIO JAVASCRIPT (enhanced)
+        // ================================
 
-<!-- additional inline script for year and any extra interactive -->
-<script>
-    // year update
-    document.getElementById('year').textContent = new Date().getFullYear();
+        // Navbar background on scroll with class toggle
+        const header = document.querySelector("header");
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 50) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled");
+            }
+        });
 
-    // ensure any external links open in new tab (already have target="_blank")
-    // and all buttons work (they already point to valid sections / links)
-    console.log('Portfolio updated with all info and working buttons.');
-</script>
+        // ================================
+        // Reveal animation (Intersection Observer)
+        // ================================
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("show");
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: "0px 0px -40px 0px"
+        });
+
+        const hiddenElements = document.querySelectorAll(".hidden");
+        hiddenElements.forEach(el => observer.observe(el));
+
+        // ================================
+        // Current Year in Footer
+        // ================================
+        const year = document.getElementById("year");
+        if (year) {
+            year.textContent = new Date().getFullYear();
+        }
+
+        // ================================
+        // Smooth nav link highlight (optional)
+        // ================================
+        console.log("✨ Portfolio upgraded with animations, glows & effects.");
+    </script>
+
 </body>
 </html>
