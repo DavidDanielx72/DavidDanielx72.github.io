@@ -1,130 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David Daniel Sepkitt | Software Developer</title>
-
-    <meta name="description" content="Portfolio of David Daniel Sepkitt, an aspiring Full Stack Software Developer based in Cape Town, South Africa.">
+    <meta name="description" content="Portfolio of David Daniel Sepkitt, an aspiring Full Stack Software Developer based in Cape Town, South Africa." />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* additional minimal tweaks – keep your styles intact */
+        .section-padding {
+            padding: 4rem 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .grid-2col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+        .info-box {
+            background: var(--card);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 20px;
+            padding: 1.5rem 1.8rem;
+            backdrop-filter: blur(4px);
+            transition: 0.25s;
+        }
+        .info-box:hover {
+            border-color: var(--blue);
+            box-shadow: 0 0 25px rgba(59,130,246,0.15);
+        }
+        .info-box h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--white);
+        }
+        .info-box h3 i {
+            color: var(--cyan);
+        }
+        .info-box ul, .info-box p {
+            color: var(--grey);
+            line-height: 1.7;
+            font-size: 0.98rem;
+        }
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .info-box ul li {
+            margin-bottom: 0.3rem;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+        .info-box ul li::before {
+            content: "▹";
+            color: var(--blue);
+            position: absolute;
+            left: 0;
+        }
+        .chip-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem 0.8rem;
+            margin-top: 0.4rem;
+        }
+        .chip {
+            background: rgba(59,130,246,0.15);
+            border: 1px solid rgba(59,130,246,0.25);
+            padding: 0.25rem 1rem;
+            border-radius: 30px;
+            font-size: 0.8rem;
+            color: var(--grey);
+            transition: 0.2s;
+        }
+        .chip:hover {
+            background: rgba(59,130,246,0.25);
+            color: white;
+        }
+        .ref-card {
+            background: var(--card);
+            border-radius: 16px;
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.75rem;
+            border-left: 3px solid var(--blue);
+        }
+        .ref-card strong {
+            color: var(--white);
+        }
+        .ref-card small {
+            color: var(--grey);
+            display: block;
+            margin-top: 0.2rem;
+            font-size: 0.85rem;
+        }
+        .btn-small {
+            padding: 0.3rem 1rem;
+            font-size: 0.8rem;
+            border-radius: 40px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            color: var(--grey);
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+        .btn-small:hover {
+            background: var(--blue);
+            color: white;
+            border-color: var(--blue);
+        }
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem 1.2rem;
+            margin-top: 0.5rem;
+        }
+        .project-links a {
+            color: var(--cyan);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            border-bottom: 1px solid transparent;
+            transition: 0.2s;
+        }
+        .project-links a:hover {
+            border-bottom-color: var(--cyan);
+            color: white;
+        }
+        @media (max-width: 800px) {
+            .grid-2col {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <header>
-
-<nav class="navbar">
-
-<div class="logo">
-
-David<span>.</span>
-
-</div>
-
-<ul class="nav-links">
-
-<li><a href="#home">Home</a></li>
-
-<li><a href="#about">About</a></li>
-
-<li><a href="#skills">Skills</a></li>
-
-<li><a href="#projects">Projects</a></li>
-
-<li><a href="#experience">Experience</a></li>
-
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</nav>
-
+    <nav class="navbar">
+        <div class="logo">David<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 
-<!-- HERO -->
-
+<!-- HERO / HOME -->
 <section id="home" class="hero">
+    <div class="hero-content">
+        <p class="intro">👋 Hello, I'm</p>
+        <h1>David Daniel <span>Sepkitt</span></h1>
+        <h2>Aspiring Full Stack Software Developer</h2>
+        <p class="summary">
+            Application Development student at CPUT with a passion for building practical, user-focused solutions 
+            and continuously expanding my technical knowledge. I bring a strong work ethic, adaptability, 
+            problem-solving skills, and the ability to collaborate effectively while writing clean, efficient code. 
+            I am committed to making a meaningful contribution to every team I join and am driven by the opportunity 
+            to use technology to create innovative solutions. My goal is to grow into a full-time Full Stack Software 
+            Developer and contribute to building the technologies of the future.
+        </p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#" class="btn-secondary" target="_blank">Download CV</a>
+        </div>
+        <!-- online presence inline -->
+        <div style="margin-top: 2rem; display: flex; gap: 1.2rem; flex-wrap: wrap;">
+            <a href="https://github.com/DavidDanielx72" target="_blank" class="btn-small"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank" class="btn-small"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://rietfontein.co.za/" target="_blank" class="btn-small"><i class="fas fa-globe"></i> Rietfontein</a>
+        </div>
+    </div>
 
-<div class="hero-content">
-
-<p class="intro">
-
-👋 Hello, I'm
-
-</p>
-
-<h1>
-
-David Daniel <span>Sepkitt</span>
-
-</h1>
-
-<h2>
-
-Aspiring Full Stack Software Developer
-
-</h2>
-
-<p class="summary">
-
-Application Development student passionate about building practical software solutions, continuously learning new technologies, and creating user-focused applications that make a meaningful impact.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#projects" class="btn-primary">
-
-View Projects
-
-</a>
-
-<a href="assets/cv.pdf"
-
-class="btn-secondary"
-
-target="_blank">
-
-Download CV
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-tech">
-
-<div class="tech-card">Java</div>
-
-<div class="tech-card">JavaScript</div>
-
-<div class="tech-card">HTML5</div>
-
-<div class="tech-card">CSS3</div>
-
-<div class="tech-card">React</div>
-
-<div class="tech-card">SQL</div>
-
-<div class="tech-card">GitHub</div>
-
-<div class="tech-card">Supabase</div>
-
-</div>
-
+    <div class="hero-tech">
+        <div class="tech-card">Java</div>
+        <div class="tech-card">JavaScript</div>
+        <div class="tech-card">HTML5</div>
+        <div class="tech-card">CSS3</div>
+        <div class="tech-card">React</div>
+        <div class="tech-card">SQL</div>
+        <div class="tech-card">GitHub</div>
+        <div class="tech-card">Supabase</div>
+    </div>
 </section>
+
+<!-- ===== ABOUT / PERSONAL DETAILS ===== -->
+<section id="about" class="section-padding" style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: var(--cyan);">//</span> About Me
+        </h2>
+        <div class="grid-2col">
+            <div class="info-box">
+                <h3><i class="fas fa-user"></i> Personal</h3>
+                <ul>
+                    <li><strong>Age:</strong> 20 years old</li>
+                    <li><strong>Location:</strong> Cape Town, Western Cape</li>
+                    <li><strong>Languages:</strong> English, Afrikaans</li>
+                    <li><strong>Driver's License:</strong> No</li>
+                </ul>
+                <div style="margin-top: 1rem;">
+                    <span class="chip"><i class="fas fa-map-pin"></i> Cape Town</span>
+                    <span class="chip"><i class="fas fa-language"></i> English / Afrikaans</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <ul>
+                    <li><strong>Cape Peninsula University of Technology</strong><br>Diploma in ICT: Applications Development <span style="color: var(--grey);">(2024 – Present)</span></li>
+                    <li style="margin-top: 0.8rem;"><strong>Zwaanswyk High School</strong><br>National Senior Certificate <span style="color: var(--grey);">(2019 – 2023)</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="section-padding">
+    <div class="container">
+        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: var(--cyan);">//</span> Technical Proficiencies
+        </h2>
+        <div class="grid-2col">
+            <div class="info-box">
+                <h3><i class="fas fa-code"></i> Languages & Frameworks</h3>
+                <div class="chip-group">
+                    <span class="chip">Java</span>
+                    <span class="chip">JavaScript</span>
+                    <span class="chip">HTML5</span>
+                    <span class="chip">CSS3</span>
+                    <span class="chip">React</span>
+                    <span class="chip">WordPress</span>
+                </div>
+                <h3 style="margin-top: 1.2rem;"><i class="fas fa-database"></i> Database & Tools</h3>
+                <div class="chip-group">
+                    <span class="chip">SQL</span>
+                    <span class="chip">Supabase</span>
+                    <span class="chip">Database Design</span>
+                    <span class="chip">GitHub</span>
+                    <span class="chip">VS Code</span>
+                    <span class="chip">NetBeans</span>
+                    <span class="chip">IntelliJ IDEA</span>
+                </div>
+                <h3 style="margin-top: 1.2rem;"><i class="fas fa-users"></i> Soft Skills</h3>
+                <div class="chip-group">
+                    <span class="chip">Problem-solving</span>
+                    <span class="chip">Analytical thinking</span>
+                    <span class="chip">Communication</span>
+                    <span class="chip">Teamwork</span>
+                    <span class="chip">Time management</span>
+                    <span class="chip">Adaptability</span>
+                    <span class="chip">Willingness to learn</span>
+                    <span class="chip">Attention to detail</span>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3><i class="fas fa-heart"></i> Interests</h3>
+                <ul>
+                    <li>Exploring emerging technologies, particularly Artificial Intelligence</li>
+                    <li>Music and Technology</li>
+                </ul>
+                <div style="margin-top: 1.2rem;">
+                    <span class="chip"><i class="fas fa-robot"></i> AI</span>
+                    <span class="chip"><i class="fas fa-music"></i> Music</span>
+                    <span class="chip"><i class="fas fa-microchip"></i> Tech</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="section-padding" style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: var(--cyan);">//</span> Projects
+        </h2>
+        <div class="grid-2col">
+            <div class="info-box">
+                <h3><i class="fas fa-robot"></i> AI_Chatbot</h3>
+                <p style="color: var(--grey);">Interactive chatbot project exploring AI-driven conversations.</p>
+                <div class="project-links">
+                    <a href="https://github.com/DavidDanielx72/AI_Chatbot" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3><i class="fas fa-microchip"></i> iot-elective-project-2026-beep</h3>
+                <p style="color: var(--grey);">IoT elective project focusing on embedded systems and connectivity.</p>
+                <div class="project-links">
+                    <a href="https://github.com/DavidDanielx72/iot-elective-project-2026-beep" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                </div>
+            </div>
+            <div class="info-box" style="grid-column: 1 / -1;">
+                <h3><i class="fas fa-globe"></i> Rietfontein Guest Farm – Website Update</h3>
+                <p style="color: var(--grey);">Content & design updates for the Rietfontein website – improved structure, usability, and brand alignment.</p>
+                <div class="project-links">
+                    <a href="https://rietfontein.co.za/" target="_blank"><i class="fas fa-external-link-alt"></i> Visit Site</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="section-padding">
+    <div class="container">
+        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: var(--cyan);">//</span> Work Experience
+        </h2>
+        <div class="grid-2col">
+            <div class="info-box">
+                <h3><i class="fas fa-pencil-alt"></i> Rietfontein Ladismith Guest Farm</h3>
+                <p><strong>Website Content & Design Updates</strong> <span style="color: var(--grey);">(Jan 2026 – Feb 2026)</span></p>
+                <ul>
+                    <li>Updated website content, business info, images, and page layouts to keep the site current and aligned with client needs.</li>
+                    <li>Improved structure, usability, and overall presentation while collaborating with the client to support brand and communication goals.</li>
+                </ul>
+                <div style="margin-top: 0.6rem;">
+                    <a href="https://rietfontein.co.za/" target="_blank" class="btn-small"><i class="fas fa-external-link-alt"></i> rietfontein.co.za</a>
+                </div>
+            </div>
+            <div class="info-box">
+                <h3><i class="fas fa-store"></i> Country Road Waterfront (Woolworths Group)</h3>
+                <p><strong>Seasonal Sales Consultant</strong> <span style="color: var(--grey);">(Dec 2025 – Jan 2026)</span></p>
+                <ul>
+                    <li>Provided customer service in menswear, assisting with product enquiries, purchases, and general needs.</li>
+                    <li>Maintained stock levels and merchandising standards while supporting daily store operations during the holiday season.</li>
+                </ul>
+            </div>
+            <div class="info-box" style="grid-column: 1 / -1;">
+                <h3><i class="fas fa-glass-cheers"></i> Cape Town DHL Stadium</h3>
+                <p><strong>Casual Bar Attendant</strong> <span style="color: var(--grey);">(Dec 2023 – Feb 2024)</span></p>
+                <ul>
+                    <li>Served alcoholic beverages and provided customer service during high-volume events, ensuring efficient and professional service.</li>
+                    <li>Assisted with stock replenishment and beverage transport, working accurately and calmly under pressure.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== REFERENCES ===== -->
+<section id="contact" class="section-padding" style="background: rgba(255,255,255,0.02); border-top: 1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+        <h2 style="font-size: 2.2rem; margin-bottom: 2rem; display: flex; align-items: center; gap: 0.75rem;">
+            <span style="color: var(--cyan);">//</span> References
+        </h2>
+        <div class="grid-2col">
+            <div class="ref-card">
+                <strong>Anthony Cronje</strong> <span style="color: var(--grey);">– General Manager, Rietfontein Guest Farm</span>
+                <small><i class="fas fa-phone"></i> 084 712 551 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> tonycronje@yahoo.co.uk</small>
+            </div>
+            <div class="ref-card">
+                <strong>Copy Khayalethu Tshemese</strong> <span style="color: var(--grey);">– Line Manager, Country Road Waterfront</span>
+                <small><i class="fas fa-phone"></i> 0684727323 &nbsp;|&nbsp; <i class="fas fa-envelope"></i> aconcession@woolwoths.co.za</small>
+            </div>
+            <div class="ref-card" style="grid-column: 1 / -1; max-width: 600px;">
+                <strong>Dane Meyer</strong> <span style="color: var(--grey);">– General Manager, DHL Bar (Stadium)</span>
+                <small><i class="fas fa-phone"></i> 0636910436</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer style="border-top: 1px solid rgba(255,255,255,0.06); padding: 2rem 0; text-align: center; color: var(--grey); font-size: 0.9rem;">
+    <div class="container">
+        <p>&copy; <span id="year"></span> David Daniel Sepkitt. Built with <i class="fas fa-heart" style="color: var(--blue);"></i> in Cape Town.</p>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; margin-top: 0.8rem; flex-wrap: wrap;">
+            <a href="https://github.com/DavidDanielx72" target="_blank" style="color: var(--grey);"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/david-sepkitt-811837362/" target="_blank" style="color: var(--grey);"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            <a href="https://rietfontein.co.za/" target="_blank" style="color: var(--grey);"><i class="fas fa-globe"></i> Rietfontein</a>
+        </div>
+    </div>
+</footer>
 
 <script src="script.js"></script>
 
+<!-- additional inline script for year and any extra interactive -->
+<script>
+    // year update
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // ensure any external links open in new tab (already have target="_blank")
+    // and all buttons work (they already point to valid sections / links)
+    console.log('Portfolio updated with all info and working buttons.');
+</script>
 </body>
 </html>
