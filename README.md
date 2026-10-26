@@ -1,10 +1,8 @@
 # David Daniel Sepkitt - Professional Portfolio
 
 ## Contact Information
-- **Phone:** 083 236 1787
-- **Alternate:** 073 230 1377
 - **Email:** 240046935@mycput.ac.za
-- **Address:** 19 Gail Road, Retreat, Cape Town
+- **Address:** Cape Town
 - **GitHub:** [https://github.com/DavidDanielx72](https://github.com/DavidDanielx72)
 - **Live Portfolio:** [https://daviddanielx72.github.io/](https://daviddanielx72.github.io/)
 
