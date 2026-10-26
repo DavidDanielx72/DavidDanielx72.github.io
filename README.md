@@ -640,4 +640,3 @@ Semester 1 gave me the technical skills such as Java, OOP, web development and G
 
 ---
 
-*The Agile definitions used in this portfolio come from the PRP370S Assessment 2 brief (CPUT, 2026). All diagrams marked "made by me" were created by me. Client information has been kept private.*
