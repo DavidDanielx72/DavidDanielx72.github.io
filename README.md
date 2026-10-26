@@ -1,7 +1,7 @@
-# David Daniel Sepkitt – Professional Portfolio
+# David Daniel Sepkitt - Professional Portfolio
 
-**Diploma in ICT: Applications Development · Cape Peninsula University of Technology (CPUT)**
-**PRP370S – Project Presentation 3 · Digital Portfolio of Evidence (Semester 1 & Semester 2)**
+**Diploma in ICT: Applications Development, Cape Peninsula University of Technology (CPUT)**
+**PRP370S Project Presentation 3 - Digital Portfolio of Evidence (Semester 1 and Semester 2)**
 
 | | |
 |---|---|
@@ -19,27 +19,24 @@
 2. [Education](#education)
 3. [Work Experience](#work-experience)
 4. [Technical Skills](#technical-skills)
-5. [**Semester 1 – Foundational Projects & Career Readiness**](#semester-1-foundational-projects--career-readiness)
-   - [Projects](#semester-1-projects)
-   - [Mock Interview](#mock-interview)
-   - [STAR Reflections](#semester-1-star-method-reflections)
-6. [**Semester 2 – Industry Placement Agile Portfolio**](#semester-2-industry-placement-agile-portfolio)
-   - [Context & Confidentiality](#context-how-we-work-at-suitable-focus)
+5. [Semester 1: Foundational Projects and Career Readiness](#semester-1-foundational-projects-and-career-readiness)
+6. [Semester 2: Industry Placement Agile Portfolio](#semester-2-industry-placement-agile-portfolio)
+   - [How We Work at Suitable Focus](#how-we-work-at-suitable-focus)
    - [1. Agile Team Charter](#1-agile-team-charter)
    - [2. User Stories and Tasks](#2-user-stories-and-tasks)
    - [3. Product Backlog](#3-product-backlog)
    - [4. Sprint Backlog](#4-sprint-backlog)
    - [5. Agile Logbook](#5-agile-logbook)
-   - [Portfolio Summary (Connect)](#portfolio-summary-connecting-the-evidence)
+   - [Summary](#summary)
 7. [Links](#links)
 
 ---
 
 ## Career Objective
 
-I am a third-year student at CPUT studying towards a Diploma in Information and Communication Technology in Applications Development. I am currently completing my Industry Placement at **Suitable Focus**, a growing digital agency, where I work across workflow automation, web development and frontend integration for client projects.
+I am a third-year student at CPUT studying towards a Diploma in ICT in Applications Development. I am currently doing my Industry Placement at **Suitable Focus**, where I work on automation, web development and frontend work for client projects.
 
-I have a foundation in Java, JavaScript, HTML, CSS and SQL, and I am gaining hands-on experience with workflow automation, email marketing integrations and data synchronisation using Zapier, Mailchimp/HubSpot, webhooks and custom JavaScript. My goal is to become a well-rounded **Full Stack Developer** who understands both software development and the business processes it automates.
+I have a good base in Java, JavaScript, HTML, CSS and SQL, and during my placement I have been getting hands-on experience with workflow automation, email marketing and syncing data between platforms using Zapier, Mailchimp/HubSpot, webhooks and my own JavaScript. My goal is to become a Full Stack Developer who understands both the code and the business side of what is being built.
 
 ---
 
@@ -47,42 +44,42 @@ I have a foundation in Java, JavaScript, HTML, CSS and SQL, and I am gaining han
 
 | Institution | Qualification | Period |
 |---|---|---|
-| Cape Peninsula University of Technology (CPUT) | Diploma in ICT – Applications Development | 2024 – Present |
-| Zwaanswyk High School | National Senior Certificate | 2019 – 2023 |
+| Cape Peninsula University of Technology (CPUT) | Diploma in ICT: Applications Development | 2024 - Present |
+| Zwaanswyk High School | National Senior Certificate | 2019 - 2023 |
 
 ---
 
 ## Work Experience
 
-### Automation & Web Development Intern – Suitable Focus
-*Current Industry Placement (Work Integrated Learning)*
+### Automation and Web Development Intern - Suitable Focus
+*Current Industry Placement*
 
-Suitable Focus is a recently established agency. Because the company is still growing, formal project management systems were not in place from the start, so the team adopted lightweight Agile practices and modern collaboration tools as client work increased. My main project is building the customer automation infrastructure for a consumer-brand client from the ground up (client name withheld – see [Confidentiality](#confidentiality-statement)).
+Suitable Focus is a fairly new agency. Because the company is still growing, there was no proper project management system from the start, so as the client work picked up the team started using Agile and tools like Zoho Projects to stay organised. Right now my main project is building the automation side for one of our clients from scratch. I have kept the client's name private in this portfolio.
 
-**Key responsibilities:**
-- Designing and building automated customer journey workflows for onboarding and engagement
-- Setting up email marketing triggers, list segmentation and scheduled campaign flows (Mailchimp/HubSpot)
-- Configuring automated customer satisfaction surveys and feedback loops
-- Integrating frontend web forms with automation platforms using webhooks, APIs and Zapier
-- Writing custom client-side JavaScript for DOM manipulation, dynamic CSS, JSON formatting and async UI states where CMS templates lack flexibility
-- Logging and tracking work in Zoho Projects, posting daily updates in Zoho Cliq and joining planning/review sessions on Google Meet
+**What I do:**
+- Build automated customer journeys for onboarding and follow-ups
+- Set up email triggers, list segments and scheduled campaigns in Mailchimp/HubSpot
+- Set up automated customer surveys and feedback
+- Connect web forms to the automation platforms using webhooks, APIs and Zapier
+- Write JavaScript to fix layouts, format data and handle loading states where the website template could not do what we needed
+- Log my tasks in Zoho Projects and give daily updates to the team on Zoho Cliq
 
-### Rietfontein Ladismith Guest Farm – Website Update
-*January 2026 (3 weeks) · Freelance / real client*
-- Updated outdated website content (last refreshed in 2016) for 2026
-- Improved mobile usability and overall user experience
-- Added new images, rewrote content and improved layout structure
+### Rietfontein Ladismith Guest Farm - Website Update
+*January 2026 (3 weeks)*
+- Updated the website content, which had not been touched since 2016
+- Made the site easier to use on mobile
+- Added new images, updated the content and improved the layout
 - Website: [rietfontein.co.za](https://rietfontein.co.za/)
 
-### Country Road Waterfront – Woolworths Group
-*Seasonal Sales Consultant (Dec 2025 – Jan 2026)*
-- Assisted customers in the menswear division
-- Handled stock replenishment and delivery verification
+### Country Road Waterfront - Woolworths Group
+*Seasonal Sales Consultant (Dec 2025 - Jan 2026)*
+- Helped customers in the menswear section
+- Did stock replenishment and checked deliveries
 
 ### Cape Town DHL Stadium
-*Casual Bar Attendant / Cashier (Dec 2023 – Feb 2024)*
-- Served customers during high-volume events and concerts
-- Managed cash-up processes accurately at the end of shifts
+*Casual Bar Attendant / Cashier (Dec 2023 - Feb 2024)*
+- Served customers at busy events and concerts
+- Did the cash-up at the end of shifts
 
 ---
 
@@ -91,200 +88,199 @@ Suitable Focus is a recently established agency. Because the company is still gr
 | Area | Skills |
 |---|---|
 | **Languages** | Java, JavaScript, HTML, CSS, SQL |
-| **Frameworks & Platforms** | React, Supabase, WordPress, Java Swing |
-| **Automation & Integration** | Zapier, Mailchimp, HubSpot, webhooks, REST APIs, JSON data handling |
-| **Agile & Project Management** | Zoho Projects, Zoho Cliq, Google Meet, Scrum, Kanban, user stories, MoSCoW prioritisation, sprint planning, retrospectives |
-| **Tools & IDEs** | Git, GitHub, GitHub Pages, IntelliJ IDEA, NetBeans, Visual Studio Code |
-| **Practices** | OOP, layered architecture, debugging & testing, Markdown documentation, DOM manipulation |
+| **Frameworks and Platforms** | React, Supabase, WordPress, Java Swing |
+| **Automation and Integration** | Zapier, Mailchimp, HubSpot, webhooks, REST APIs, JSON |
+| **Agile and Project Management** | Zoho Projects, Scrum, Kanban, user stories, MoSCoW, sprint planning, retrospectives |
+| **Communication Tools** | Zoho Cliq, Outlook, Google Meet |
+| **Tools and IDEs** | Git, GitHub, GitHub Pages, IntelliJ IDEA, NetBeans, Visual Studio Code |
+| **Other** | OOP, layered architecture, debugging and testing, Markdown, DOM manipulation |
 
 ---
 ---
 
-# SEMESTER 1: Foundational Projects & Career Readiness
+# Semester 1: Foundational Projects and Career Readiness
 
-<a id="semester-1-projects"></a>
 ## Projects
 
-### 1. Rietfontein Guest Farm – Website Front-End Update (Real Client)
-*January 2026 · Individual*
-🔗 [rietfontein.co.za](https://rietfontein.co.za/)
+### 1. Rietfontein Guest Farm - Website Update (Real Client)
+*January 2026, individual*
+Website: [rietfontein.co.za](https://rietfontein.co.za/)
 
-I updated and improved the front-end of a real-world accommodation website based on the owner's requirements. The site runs on WordPress, and my job was to modernise content that had not been updated since 2016 and make the site easier to use on mobile.
+I updated the front-end of a real guest farm website based on what the owner wanted. The site runs on WordPress and the content was last updated in 2016, so my job was to bring it up to date and make it work better on phones.
 
 **My role:**
-- Gathered the client's requirements and agreed on what to change
-- Customised WordPress theme elements and refined the layout
-- Updated text, images and page structure (home, accommodation, hot tubs, activities)
-- Improved mobile responsiveness and visual presentation
-- Checked pages on different screen sizes before handing over
+- Went through what the client wanted changed
+- Customised the WordPress theme and cleaned up the layout
+- Updated the text, images and page structure (home page, hot tubs, activities and more)
+- Made the site work better on mobile
+- Checked the pages on different screen sizes before handing it over
 
-**Technologies:** WordPress · HTML · CSS · Web design principles
+**Technologies:** WordPress, HTML, CSS
 
-**Evidence:**
+**Screenshots:**
 
 <table>
   <tr>
-    <td align="center"><img src="assets/semester1/rietfontein-home.png" width="420" alt="Rietfontein home page header and navigation"/><br/><sub>Updated home page header and navigation</sub></td>
-    <td align="center"><img src="assets/semester1/rietfontein-content.png" width="420" alt="Rietfontein updated content page"/><br/><sub>Rewritten content with sidebar and subscription</sub></td>
+    <td align="center"><img src="assets/semester1/rietfontein-home.png" width="420" alt="Rietfontein home page"/><br/><sub>Updated home page header and menu</sub></td>
+    <td align="center"><img src="assets/semester1/rietfontein-content.png" width="420" alt="Rietfontein content page"/><br/><sub>Updated content page</sub></td>
   </tr>
   <tr>
-    <td colspan="2" align="center"><img src="assets/semester1/rietfontein-hot-tubs.png" width="420" alt="Rietfontein wood-fired hot tubs page"/><br/><sub>New feature page with updated banner imagery</sub></td>
+    <td colspan="2" align="center"><img src="assets/semester1/rietfontein-hot-tubs.png" width="420" alt="Rietfontein hot tubs page"/><br/><sub>Hot tubs page with the new banner</sub></td>
   </tr>
 </table>
 
 ---
 
-### 2. Catering Business Website (Group Project – Real Client)
-*2026 – Present*
-- Full-stack web application built for a real catering client
-- **Frontend:** React · **Backend & database:** Supabase
-- Team collaboration on design, component development and database structure
-- Work managed through GitHub with shared repositories and branches
+### 2. Catering Business Website (Group Project, Real Client)
+*2026 - Present*
+- Full-stack website for a real catering client
+- Front end built in React, backend and database in Supabase
+- We work as a team on the design, the components and the database
+- Code is shared on GitHub
 
 ---
 
 ### 3. Student Community App
-*2025 · Java (NetBeans)*
-- Java-based desktop/mobile-style application aimed at students
-- Features: notifications, a student marketplace and chat functionality
-- Built with Java Swing GUI components and OOP principles
+*2025, Java (NetBeans)*
+- Java app made for students
+- Has notifications, a marketplace and a chat feature
+- Built with Java Swing and OOP
 
 ---
 
 ### 4. Payroll Application
-🔗 [github.com/DavidDanielx72/PayrollApplication](https://github.com/DavidDanielx72/PayrollApplication)
+Repository: [github.com/DavidDanielx72/PayrollApplication](https://github.com/DavidDanielx72/PayrollApplication)
 
-A Java payroll system that replaces a manual process for a company (STARTUP) with more than 2 000 employees, improving efficiency and providing better HR insights.
+A Java payroll system for a company called STARTUP with over 2000 employees. The idea was to replace their manual payroll process and give HR better information.
 
-**The system manages:**
+**The system stores:**
 - Employee details (employee number, name, employment type, nationality)
-- Contact details (cell phone, email, home number) and address details
-- Identity types (e.g. passport) and job positions
-- Position status (OPEN / CLOSED)
+- Contact and address details
+- Identity types (for example passport)
+- Job positions and whether a position is OPEN or CLOSED
 
-**Architecture:** Presentation layer → Service layer → Repository layer
+**Structure:** presentation layer, service layer and repository layer
 
-**Technologies:** Java · OOP · IntelliJ IDEA
+**Technologies:** Java, OOP, IntelliJ IDEA
 
 ---
 
 ### 5. Wholesale Management System (Group Project)
-🔗 [github.com/DavidDanielx72/ADP_Assignment-02](https://github.com/DavidDanielx72/ADP_Assignment-02)
+Repository: [github.com/DavidDanielx72/ADP_Assignment-02](https://github.com/DavidDanielx72/ADP_Assignment-02)
 
-A backend Java system that helps privately owned wholesale stores manage their operations.
+A backend Java system to help small wholesale stores manage their operations.
 
 **My role:**
-- Developed the `Customer` class
-- Ensured a correct package structure across the project
-- Created missing test classes
-- Assisted with debugging and integrating team members' code so the system ran as a whole
+- Wrote the `Customer` class
+- Made sure the package structure was correct across the project
+- Added test classes that were missing
+- Helped with debugging and getting everyone's code to run together
 
-**Technologies:** Java · OOP · IntelliJ IDEA · GitHub collaboration
-
----
-
-### 6. GitHub CV & Portfolio Website
-🔗 [daviddanielx72.github.io](https://daviddanielx72.github.io/)
-
-- Personal portfolio and CV hosted on GitHub Pages
-- Started as an HTML/CSS/JavaScript site; now maintained as a Markdown portfolio so it is easier to keep up to date
-- Contains my CV, projects, mock interview and reflections
-
-**Technologies:** HTML · CSS · JavaScript · Markdown · GitHub Pages
+**Technologies:** Java, OOP, IntelliJ IDEA, GitHub
 
 ---
 
-<a id="mock-interview"></a>
+### 6. GitHub CV and Portfolio Website
+Website: [daviddanielx72.github.io](https://daviddanielx72.github.io/)
+
+- My CV and portfolio hosted on GitHub Pages
+- Started out as an HTML, CSS and JavaScript site and I later moved it to Markdown so it is easier to keep updated
+- Has my CV, projects, mock interview and reflections
+
+**Technologies:** HTML, CSS, JavaScript, Markdown, GitHub Pages
+
+---
+
 ## Mock Interview
 
-As part of work-readiness training I completed and recorded a mock interview.
+As part of the work readiness training I did a mock interview and recorded it.
 
-🎥 **[Watch my mock interview on YouTube](https://www.youtube.com/watch?v=ZQn11TBY3bs)**
+**[Watch my mock interview on YouTube](https://www.youtube.com/watch?v=ZQn11TBY3bs)**
 
 ---
 
 ## Semester 1 STAR Method Reflections
 
-### 📌 Markdown Coding Reflection
+### Markdown Coding Reflection
 
-**Situation:** I was required to build my GitHub portfolio using Markdown for my assessment.
+**Situation:** I had to build my GitHub portfolio using Markdown for my assessment.
 
-**Task:** I needed to present my work, projects and reflections clearly and professionally in a format that renders well on GitHub and GitHub Pages.
+**Task:** I needed to show my work, projects and reflections in a clear and professional way.
 
-**Action:** I learned Markdown syntax – headings, links, lists, tables, images and anchors – and applied a consistent structure across my repositories. I added a table of contents and organised content from general (about me) to specific (projects and evidence).
+**Action:** I learned how to use headings, links, lists, tables and images in Markdown. I kept the same structure throughout and added a table of contents so it is easy to find things.
 
-**Result:** I produced a well-structured portfolio that is easy to read and navigate. The skill has carried into my internship, where I now write technical notes and handover documentation in a similar structured way.
-
----
-
-### 🎥 Mock Interview Reflection
-
-**Situation:** I took part in a mock interview as part of CPUT's work-readiness training.
-
-**Task:** I had to answer common interview questions professionally and confidently and present my technical experience.
-
-**Action:** I prepared answers using the STAR method, chose concrete project examples (the Payroll Application and the Rietfontein website), and recorded myself so I could review my body language, pace and eye contact.
-
-**Result:** My confidence and communication improved noticeably. I learned to explain technical work in plain language – which helped me during my placement interview at Suitable Focus.
+**Result:** My portfolio is easy to read and move around in. I now use the same kind of structure at work when I write notes and documentation.
 
 ---
 
-### 🌐 GitHub Pages Reflection
+### Mock Interview Reflection
 
-**Situation:** I needed to publish my portfolio online so lecturers and employers could access it.
+**Situation:** I did a mock interview as part of work readiness training.
 
-**Task:** I had to deploy the portfolio using GitHub Pages.
+**Task:** I had to answer the questions professionally and confidently.
 
-**Action:** I created the `username.github.io` repository, configured the Pages settings to deploy from the main branch, and tested every link and relative image path after each change.
+**Action:** I practised common interview questions using the STAR method, picked real project examples to talk about (my Payroll Application and the Rietfontein website) and recorded myself so I could check my body language and how fast I was talking.
 
-**Result:** I successfully published a live portfolio. I now understand how static hosting works, and I update the site regularly – including restructuring it this semester to hold my Agile evidence.
+**Result:** I felt a lot more confident afterwards and got better at explaining technical work in simple words. This helped me when I had my interview for my placement.
+
+---
+
+### GitHub Pages Reflection
+
+**Situation:** I needed to put my portfolio online so lecturers and employers could see it.
+
+**Task:** I had to publish it using GitHub Pages.
+
+**Action:** I set up the repository, turned on GitHub Pages from the main branch and tested all the links and image paths after every change.
+
+**Result:** My portfolio is live and I understand how static hosting works. I keep updating it, including adding my Agile work this semester.
 
 ---
 ---
 
-# SEMESTER 2: Industry Placement Agile Portfolio
+# Semester 2: Industry Placement Agile Portfolio
 
-> **Scope:** This section covers my **Industry Placement** only (current projects at the company), as required for PRP370S Assessment 2. Each Agile artefact has an **Evidence** part and a **Reflection** part structured with the e-portfolio cycle **Collect → Select → Reflect → Connect**.
+This section covers my Industry Placement at Suitable Focus. Each part has my **Evidence** and then my **Reflection**, which I wrote using Collect, Select, Reflect and Connect.
 
-## Context: How We Work at Suitable Focus
+## How We Work at Suitable Focus
 
-Suitable Focus is a young agency that did not have formal project management infrastructure from day one. As client work grew, the team adopted Agile practices (short sprints, a shared backlog, daily stand-ups and retrospectives) and introduced tools to stay organised:
+Suitable Focus did not have a proper project management setup when it started. As we got more client work, the team started working in an Agile way (sprints, a backlog, daily updates and retros) and brought in tools to keep things organised.
 
-| Tool | How we use it | Agile purpose |
-|---|---|---|
-| **Zoho Projects** | Central hub for tasks, milestones, task lists and the Kanban board (To Do → In Progress → Review/Testing → Done) | Product backlog, sprint backlog, task tracking |
-| **Zoho Cliq** | Daily written stand-ups, quick questions, blocker escalation | Daily stand-up, logbook source |
-| **Google Meet** | Sprint planning, client syncs, sprint reviews and retrospectives | Sprint ceremonies |
-| **Group chat** *(added mid-project)* | Real-time approvals between the dev team, CEO and the client account lead | Removing communication blockers |
-
-> **Note on tools:** The assessment brief uses Trello as an example of a Kanban tool. Suitable Focus does not use Trello – the company recently adopted **Zoho Projects**, which provides the same Kanban board, task list and status workflow. All my evidence therefore comes from Zoho Projects and Zoho Cliq.
-
-### The Project: Client Automation & Web Integration ("Project Launchpad")
-
-My current project is for a new consumer-brand client of Suitable Focus. I refer to it as **Project Launchpad**. We are building their digital automation infrastructure from scratch.
-
-**Goal:** Streamline customer engagement by automating onboarding and email journeys and connecting the client's web capture points (forms and surveys) to the marketing and data platforms.
-
-![Customer journey automation architecture](assets/semester2/journey.png)
-*Figure 1 – Anonymised architecture of the automation journeys I built (diagram created by me).*
-
-**Project status at time of submission:**
-
-| ✅ Completed | 🔄 In progress / still to do |
+| Tool | What we use it for |
 |---|---|
-| Workflow & journey architecture mapped and configured | Advanced, behaviour-based segmentation |
-| Email triggers, list segmentation and campaign sequences | Performance tracking dashboards |
-| Custom JavaScript for DOM manipulation, dynamic CSS, JSON formatting and async UI states on survey pages | Full end-to-end testing across devices and form inputs |
-| Form integrations syncing web entry points with the automation platform | Technical documentation and formal client handover via Zoho Projects |
+| **Zoho Projects** | Managing our projects. All tasks, task lists, owners and statuses are kept here. This is the only tool we use for project management. |
+| **Zoho Cliq** | Team communication. Daily updates, quick questions, blockers and our team meetings. |
+| **Outlook** | Emails to our clients. |
+| **Google Meet** | Meetings with our clients. |
+| **WhatsApp group** | Created during the project because communication with the team member in charge of the client project was slow. More on this in the Team Charter section. |
 
-### Confidentiality Statement
+**A note on Trello:** The assessment brief uses Trello as an example. We do not use Trello at Suitable Focus. We only recently started using Zoho Projects, which has task lists, a board view and statuses, so all my evidence comes from Zoho Projects.
 
-This portfolio is shared publicly, so I have protected the client and my host company:
-- The client's **name, brand, website URLs and staff names are withheld**
-- **No customer data, email addresses, API keys, account IDs or credentials** appear anywhere
-- **No commercial information** (pricing, contract terms, internal performance figures) is included
-- Screenshots from Zoho Projects / Zoho Cliq have **names, client details and message content blurred**
-- Diagrams marked *"created by me"* are my own visual summaries of our process, used where a raw screenshot would expose confidential information
+### The Client Project
+
+My current project is for a new client of Suitable Focus. I am keeping the client's name and details private. We are building their automation setup from scratch. The goal is to automate how they onboard and follow up with people, and to connect their web forms and surveys to their email marketing platform.
+
+![How the automations work](assets/semester2/journey.png)
+*Figure 1: The automations I built, step by step (diagram made by me).*
+
+**Where the project is at right now:**
+
+| Done | Still to do |
+|---|---|
+| Planned and set up the main automated journeys | More detailed segments based on how people behave |
+| Email triggers, segments and campaigns | Dashboards to track how the emails and surveys perform |
+| JavaScript for the survey pages (layout, CSS, JSON formatting, loading states) | Full testing from start to end on different devices and form inputs |
+| Web forms connected to the automation platform | Writing the documentation and handing over to the client through Zoho Projects |
+
+### Keeping Client Information Private
+
+Because this portfolio is public, I left out:
+- The client's name, website links and the names of the people involved
+- Any customer data, email addresses, API keys, account IDs or logins
+- Anything to do with pricing or contracts
+- Names and profile pictures in my Zoho Projects screenshot are blurred
+
+The diagrams marked "made by me" are my own drawings of how we work. I used them where a real screenshot would show private information.
 
 ---
 
@@ -292,50 +288,46 @@ This portfolio is shared publicly, so I have protected the client and my host co
 
 ### Evidence
 
-Because Suitable Focus is a startup, there was no inherited charter. The team agreed its working agreements at project kick-off and – importantly – **changed them during the project** when a problem appeared. The charter below is the current version (v2).
+Suitable Focus is a startup so there was no team charter from before. The team agreed on how we work at the start of the project, and then we changed it during the project when we ran into a communication problem. This is the current version (version 2).
 
 ![Agile team charter](assets/semester2/charter.png)
-*Figure 2 – Team charter canvas for the client automation team (created by me from our agreed working practices).*
+*Figure 2: Our team charter for the client project (diagram made by me from what the team agreed on).*
 
 **Summary of the charter:**
 
-| Element | Our agreement |
+| Part | What we agreed |
 |---|---|
-| **Shared purpose** | Deliver reliable automation journeys and frontend integrations that help our client launch, onboard and keep customers – tested, documented and handed over cleanly. |
-| **Core values** | Transparency · Ownership · Quality before speed on live data · Respect for timelines · Client confidentiality |
-| **Roles** | CEO = product owner (priorities & sign-off) · Account lead = client liaison · Me = automation build, JS/frontend integration, testing · Team member = forms, UI fixes, reviews |
-| **Working agreements** | Daily stand-up in Zoho Cliq by 09:30 · Blockers posted within 24 h · Every task logged in Zoho Projects before work starts · Weekly planning/review on Google Meet |
-| **Operational boundaries** | Automation changes tested in staging first · Live-page JavaScript changes need a second review · New requests discussed before entering the backlog · No client data or credentials outside approved tools |
-| **Definition of Done** | Acceptance criteria met · Tested with sample data incl. edge cases · Reviewed by a second person · Moved to Done in Zoho Projects · Handover note written |
+| **Shared purpose** | Build automations and frontend work for our client that work properly, are tested before going live and are documented so the client can take them over. |
+| **Core values** | Keep everyone in the loop, speak up early when stuck, test before anything goes live, respect deadlines and each other's time, keep client info private. |
+| **Roles** | CEO sets priorities and signs off work. The project lead is in charge of the client project. I do the automations, JavaScript, frontend and testing. Other team members handle admin, vendors, forms, UI fixes and reviews. |
+| **Working agreements** | Daily update in Zoho Cliq every morning. Blockers posted in Zoho Cliq within 24 hours. Every task logged in Zoho Projects before work starts. Team meetings on Zoho Cliq. |
+| **Communication** | Zoho Projects for managing the project, Zoho Cliq for the team, Outlook for client emails, Google Meet for client meetings. |
+| **Boundaries** | Automations tested in staging first. Changes to live pages get checked by someone else. New requests are discussed before going on the backlog. No client data or logins shared outside our tools. |
+| **Definition of Done** | Acceptance criteria met, tested with sample data (including bad input), checked by a second person, closed in Zoho Projects and a short note written for the handover. |
 
-#### Charter change log (a living document)
+#### Changes to the charter
 
-| Version | Trigger | Change |
+| Version | What happened | What we changed |
 |---|---|---|
-| v1 – Kick-off | Project start | Agreed tools (Zoho Projects, Cliq, Meet), stand-up time, staging-first rule, Definition of Done |
-| v2 – Sprint 2 | Approvals from the client side took days over email, stalling sprint tasks | Added a **dedicated real-time group chat** (dev team + CEO + account lead) for clarifications and approvals; agreed that every decision made in chat is **copied into the related Zoho Projects task** so there is still a record |
+| Version 1 (start of the project) | Starting the project | Agreed on our tools, daily updates, testing in staging first and our Definition of Done |
+| Version 2 (Sprint 2) | The team member in charge of the client project took a long time to reply to emails, so our tasks kept getting stuck waiting for answers | We made a WhatsApp group with the dev team, the CEO and the project lead so we could get answers quickly. We also agreed that any decision made in the group gets copied into the task on Zoho Projects so we still have a record of it |
 
-![Communication change before and after](assets/semester2/comms.png)
-*Figure 3 – Charter update v2: moving approvals from slow email threads to a real-time group chat.*
-
-**Screenshot evidence (names and content blurred):**
-
-![Zoho Cliq team channel](assets/screenshots/zoho-cliq-channel.png)
-*Figure 4 – Our Zoho Cliq channel where the working agreements are pinned and daily stand-ups are posted.*
+![Before and after the communication change](assets/semester2/comms.png)
+*Figure 3: How communication worked before and after we made the WhatsApp group.*
 
 ### Reflection
 
 **Collect:**
-In my first weeks I collected observations about how the team actually worked: where tasks got lost, how long questions took to answer and which tools people used. I noticed that requests discussed in conversation were often never written down, and later on I saw that sign-offs from the client side could take several days over email. I gathered this from my own waiting time on tasks, from stand-up messages and from planning discussions.
+In my first few weeks I paid attention to how the team worked and where things slowed down. I saw that some tasks were only talked about and never written down, so they got lost. Later in the project I saw that we were waiting days for replies to emails from the person in charge of the project. I picked this up from my own tasks being stuck, from our daily updates in Zoho Cliq and from our team meetings.
 
 **Select:**
-From these observations I selected the agreements that addressed the biggest gaps. Logging every task in Zoho Projects solved "lost" work. Posting blockers in Zoho Cliq within 24 hours meant we stopped waiting for weekly meetings. The most important item I selected as evidence is the **v2 change** – the group chat – because it shows the charter being used as a tool to fix a real problem rather than a document that was written once and forgotten.
+The agreements that made the biggest difference were logging every task in Zoho Projects and posting blockers in Zoho Cliq straight away. The main thing I want to show here is the version 2 change with the WhatsApp group, because it shows our charter being used to fix a real problem and not just written once and forgotten about.
 
 **Reflect:**
-The communication bottleneck taught me that a process can be technically correct but still fail if the feedback loop is too slow. Our automation sequences were ready, but they could not go live without approval, so the sprint stalled. When the team created the group chat with the CEO and the account lead, decisions that used to take days took hours. I also learned the downside of chat – decisions can disappear in the scroll – which is why we added the rule to copy decisions into Zoho Projects. Personally, I learned to raise a blocker early and clearly instead of waiting politely, and to keep my messages specific ("Please approve email 2 of the welcome sequence – preview attached") so they are quick to answer.
+The communication problem taught me that you can have everything built and ready but if you cannot get an answer, the work does not move. Our automations were ready to go but they needed sign-off first. Once we had the WhatsApp group, things that took days were sorted out in a few hours. I also saw the downside of chatting on WhatsApp, which is that decisions get lost in the messages, so copying them into Zoho Projects was important. For myself, I learned to raise a blocker early instead of just waiting, and to keep my questions short and specific so they are easy to answer.
 
 **Connect:**
-The charter is the foundation for every other artefact in this portfolio. The Definition of Done shapes how I write acceptance criteria for **user stories**, the "discuss before adding" rule controls what enters the **product backlog**, the stand-up agreement produces my **logbook** entries, and the v2 change came directly out of a **sprint retrospective**. It also connects to my Semester 1 group projects, where we had no agreed way of working – I now understand why that caused confusion and I would start any future team project with a short charter.
+The charter ties into everything else in this portfolio. The Definition of Done is what I use for the acceptance criteria in my user stories, the rule about discussing new requests controls what goes on the product backlog, the daily updates are where my logbook comes from, and the version 2 change came out of a sprint retro. Looking back at my Semester 1 group projects, we never agreed on how we would work and that caused confusion. Next time I work in a team I would start with a short charter.
 
 ---
 
@@ -343,69 +335,80 @@ The charter is the foundation for every other artefact in this portfolio. The De
 
 ### Evidence
 
-Client requests are turned into user stories in planning sessions on Google Meet with my supervisor. Each story follows the format **"As a [user], I want [goal] so that [benefit]"**, gets **acceptance criteria** (Given/When/Then), a **story point** estimate and is then broken down into tasks in Zoho Projects.
+When the client asks for something, we turn it into a user story in our team meeting on Zoho Cliq. I write the story as **"As a [user], I want [goal] so that [reason]"**, add acceptance criteria, give it story points and then break it down into tasks in Zoho Projects.
 
 ![User story map](assets/semester2/storymap.png)
-*Figure 5 – User story map: epics → stories → tasks (created by me).*
+*Figure 4: User story map with the epics, stories and tasks (made by me).*
 
-#### US-01 · Automated customer onboarding journey · Epic: Onboarding · 5 pts · Must Have
-> *As a **new customer**, I want to **receive a welcome email with clear next steps immediately after signing up** so that **I know how to engage with the brand**.*
+#### US-01: Automated onboarding email (Epic: Onboarding, 5 points, Must Have)
+> *As a **new sign-up**, I want to **get a welcome email with clear next steps straight after signing up** so that **I know what to do next**.*
 
 **Acceptance criteria**
-- **Given** a visitor submits the sign-up form, **when** the webhook fires, **then** a contact is created/updated in the email platform with the correct tags
-- **Given** the contact is created, **when** 5 minutes have passed, **then** the welcome email is sent exactly once
-- **Given** a date field is submitted, **then** it is stored in the platform's required format
+- When someone submits the sign-up form, a contact is created or updated in the email platform with the right tags
+- The welcome email is sent 5 minutes later, and only once
+- Dates from the form are saved in the format the platform needs
 
 **Tasks**
 
 | # | Task | Estimate | Status |
 |---|---|---|---|
-| 1 | Set up webhook to receive form submission data | 2 h | ✅ Done |
-| 2 | Map form fields to list, tags and segments | 3 h | ✅ Done |
-| 3 | Write JavaScript transform to fix date format in payload | 1 h | ✅ Done |
-| 4 | Configure welcome email trigger with 5-minute delay | 2 h | 🔍 Review |
-| 5 | Test with sample submissions (valid, missing fields, duplicates) | 3 h | 🔍 Review |
-| 6 | Deploy to live and monitor delivery for one week | 1 h | ⬜ To Do |
+| 1 | Set up the webhook to receive the form data | 2 h | Done |
+| 2 | Map the form fields to the list, tags and segments | 3 h | Done |
+| 3 | Write JavaScript to fix the date format | 1 h | Done |
+| 4 | Set up the welcome email trigger with a 5 minute delay | 2 h | In review |
+| 5 | Test with sample data (correct, missing fields and duplicates) | 3 h | In review |
+| 6 | Go live and keep an eye on it for a week | 1 h | To do |
 
-#### US-02 · Post-interaction feedback survey · Epic: Feedback · 5 pts · Should Have
-> *As a **customer**, I want to **receive a short satisfaction survey after my interaction** so that **I can share feedback easily**.*
-
-**Acceptance criteria**
-- Survey is sent **24 hours** after the interaction is recorded
-- Required fields cannot be submitted empty and show a clear error message
-- Each response updates the correct contact record
-
-**Tasks:** Design survey form and required fields → Connect survey to automation via webhook → Configure 24 h trigger → Test data sync → Deploy and verify records update.
-
-#### US-03 · Survey and landing pages display as designed · Epic: Frontend · 8 pts · Must Have
-> *As a **site visitor**, I want the **survey and landing pages to display correctly on any device** so that **the experience matches the brand's design, even where the template is limited**.*
+#### US-02: Feedback survey (Epic: Feedback, 5 points, Should Have)
+> *As a **customer**, I want to **get a short survey after I have dealt with the business** so that **I can give feedback easily**.*
 
 **Acceptance criteria**
-- Layout matches the design on Chrome, Edge, Safari and mobile
-- Data loading shows a loading state; failed requests show a friendly error state
-- No console errors on page load
+- The survey is sent 24 hours after the interaction
+- Required fields cannot be left empty and show a clear error message
+- Each answer updates the right contact
 
-**Tasks:** Identify where the CMS template cannot render the layout → Write JavaScript to manipulate the DOM → Inject dynamic CSS rules → Format incoming JSON payloads and handle async UI states → Cross-browser/device testing → Second review → Deploy.
+**Tasks**
+- Design the survey form and required fields
+- Connect the survey to the automation with a webhook
+- Set up the 24 hour trigger
+- Test that the data syncs properly
+- Go live and check that records update
 
-#### More stories in the backlog
+#### US-03: Survey and landing pages display properly (Epic: Frontend, 8 points, Must Have)
+> *As a **visitor**, I want the **survey and landing pages to look right on any device** so that **the pages match the brand's design even where the template is limited**.*
+
+**Acceptance criteria**
+- The layout matches the design on Chrome, Edge, Safari and mobile
+- A loading message shows while data loads and a friendly error shows if something fails
+- No errors in the console when the page loads
+
+**Tasks**
+- Find where the website template cannot do the layout we need
+- Write JavaScript to change the page structure (DOM)
+- Add CSS rules with JavaScript to match the design
+- Format the JSON data and handle the loading and error states
+- Test on different browsers and devices
+- Get it checked by someone else and then go live
+
+#### Other stories on the backlog
 
 | ID | User story | Points |
 |---|---|---|
-| US-04 | As the **marketing team**, I want contacts **segmented by source and behaviour** so that each customer receives relevant campaigns. | 8 |
-| US-05 | As the **project team**, I want **end-to-end tests of every journey** across devices and inputs so that nothing fails after launch. | 5 |
-| US-06 | As the **client**, I want a **performance dashboard** (opens, clicks, survey responses) so that I can see what is working. | 8 |
-| US-07 | As the **client**, I want **technical documentation and a handover session** so that my team can maintain the automations. | 3 |
+| US-04 | As the **marketing team**, I want contacts **grouped by where they came from and what they do** so that people get emails that are relevant to them. | 8 |
+| US-05 | As the **project team**, I want **every automation tested from start to end** on different devices and inputs so that nothing breaks after launch. | 5 |
+| US-06 | As the **client**, I want a **dashboard** showing opens, clicks and survey answers so that I can see what is working. | 8 |
+| US-07 | As the **client**, I want **documentation and a handover session** so that my team can look after the automations. | 3 |
 
-**Code evidence (sanitised):** a simplified version of the type of JavaScript I wrote for US-01 and US-03. Field names and selectors are generic.
+**Code example (cleaned up):** this is a simplified version of the kind of JavaScript I wrote for US-01 and US-03. The field names and selectors are made generic.
 
 ```javascript
-// US-01: normalise a date coming through the webhook (DD/MM/YYYY -> YYYY-MM-DD)
+// US-01: change a date from DD/MM/YYYY to YYYY-MM-DD before it goes to the email platform
 function normaliseDate(value) {
   const [day, month, year] = value.split('/');
   return `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`;
 }
 
-// US-03: inject layout rules the template cannot provide and handle async states
+// US-03: add layout rules the template cannot do
 function enhanceSurveyPage() {
   const style = document.createElement('style');
   style.textContent = '.survey-grid{display:grid;gap:1rem} @media(max-width:600px){.survey-grid{grid-template-columns:1fr}}';
@@ -413,37 +416,33 @@ function enhanceSurveyPage() {
   document.querySelector('.survey-form')?.classList.add('survey-grid');
 }
 
+// US-03: load the survey data and show loading and error messages
 async function loadSurveyData(url, container) {
-  container.textContent = 'Loading...';            // loading state
+  container.textContent = 'Loading...';
   try {
     const res = await fetch(url);
     if (!res.ok) throw new Error(res.status);
-    const data = await res.json();                 // format JSON payload
+    const data = await res.json();
     container.innerHTML = data.questions.map(q => `<label>${q.label}</label>`).join('');
   } catch (err) {
-    container.textContent = 'Something went wrong. Please refresh the page.'; // error state
+    container.textContent = 'Something went wrong. Please refresh the page.';
   }
 }
 ```
 
-**Screenshot evidence (names and content blurred):**
-
-![Zoho Projects tasks for user stories](assets/screenshots/zoho-user-stories-tasks.png)
-*Figure 6 – User stories broken into tasks in Zoho Projects.*
-
 ### Reflection
 
 **Collect:**
-I collected the client's requests as they arrived – mostly short, broad phrases such as "automated customer journeys" or "make the survey page look right" – together with notes from planning calls and the problems I hit while building.
+I kept track of what the client asked for as it came in. Most of the time the requests were short and broad, like "automated customer journeys" or "make the survey page look right". I also kept my notes from our meetings and the problems I ran into while building.
 
 **Select:**
-I selected the three stories above as my main evidence because they cover the three types of work I do: automation (US-01), data capture (US-02) and frontend coding (US-03). US-03 is the best example of why decomposition matters: "make the page look right" is a wish, not a task. Breaking it into DOM manipulation, CSS injection, JSON formatting and async states gave me a clear order of work and something testable at each step.
+I picked these three stories because they cover the three kinds of work I do: automation (US-01), collecting data (US-02) and frontend coding (US-03). US-03 is the best example of why breaking work down matters. "Make the page look right" is not something you can actually work on. Once I broke it into changing the DOM, adding CSS, formatting the JSON and handling loading states, I knew what to do first and could test each part.
 
 **Reflect:**
-Writing stories from the customer's point of view changed how I think. Before, I would start with the tool ("set up a Zap"). Now I start with who benefits and what "done" looks like. Adding acceptance criteria was the biggest improvement: my first welcome-email trigger "worked" but fired with a 0-second delay; once "sent after 5 minutes, exactly once" was written as a criterion, the bug was obvious during testing. Estimating in story points was hard at first – I under-estimated testing time – so I now add explicit testing tasks to every story.
+Writing stories from the user's side changed how I start my work. Before, I would jump straight into the tool and start setting up a Zap. Now I first think about who it is for and what done looks like. Adding acceptance criteria helped the most. My first welcome email trigger looked like it worked, but it had a 0 second delay. Once "sent after 5 minutes, only once" was written down, I picked up the problem straight away in testing. I struggled with story points at first because I kept forgetting about testing time, so now every story has its own testing tasks.
 
 **Connect:**
-User stories are the units that fill the **product backlog** and are pulled into the **sprint backlog**; their tasks are what I report on in my **logbook**; and the acceptance criteria apply the **Definition of Done** from the team charter. This links back to Semester 1, where my Payroll and Wholesale projects were specified as features ("create Customer class"). Thinking in user stories would have made those projects more user-focused, and I will use this approach in all future projects.
+User stories are what fill up the product backlog and get pulled into each sprint. The tasks are what I report on in my logbook, and the acceptance criteria come from the Definition of Done in our team charter. In Semester 1 my Payroll and Wholesale projects were written as features like "create the Customer class". If I had written them as user stories I think they would have been more focused on the people using them, and I am going to use this way of working on my projects from now on.
 
 ---
 
@@ -451,48 +450,48 @@ User stories are the units that fill the **product backlog** and are pulled into
 
 ### Evidence
 
-The product backlog lives in Zoho Projects and holds all known work for the project – features, bugs, improvements and technical tasks. The CEO (product owner) and the team rank it during planning on Google Meet using **MoSCoW** and three questions: *client impact*, *urgency/dependencies* and *effort*.
+Our product backlog is kept in Zoho Projects. The project is split into task lists, and each task list is a deliverable with its own tasks, owner and status. The screenshot below shows how the project is set up, with task lists like Information and Admin and Food Vendors.
+
+![Zoho Projects task lists](assets/screenshots/zoho-project-structure.png)
+*Figure 5: The project in Zoho Projects grouped by task list, showing the deliverables and their tasks. Names, profile pictures and dates are blurred.*
+
+The CEO and the team put the backlog in order during our team meetings on Zoho Cliq. We use **MoSCoW** (Must, Should, Could, Won't) and look at three things: how much it affects the client, how urgent it is and how much work it is.
 
 ![MoSCoW product backlog](assets/semester2/moscow.png)
-*Figure 7 – Product backlog grouped by MoSCoW priority (visual summary created by me).*
+*Figure 6: The automation backlog grouped by MoSCoW priority (made by me from what is in Zoho Projects).*
 
-| Rank | ID | Backlog item | Type | Priority | Points | Status |
+| Rank | ID | Item | Type | Priority | Points | Status |
 |---|---|---|---|---|---|---|
-| 1 | US-01 | Onboarding automation journey | Feature | Must Have | 5 | 🔄 In sprint |
-| 2 | BUG-01 | Survey form required-field validation | Bug | Must Have | 2 | 🔄 In sprint |
-| 3 | US-03 | Survey/landing page JavaScript fixes | Frontend | Must Have | 8 | 🔄 In sprint |
-| 4 | US-05 | End-to-end testing of all journeys | Testing | Must Have | 5 | 🔄 In sprint |
-| 5 | US-02 | Post-interaction feedback survey | Feature | Should Have | 5 | ✅ Built, awaiting E2E test |
-| 6 | US-04 | Behaviour-based segmentation & campaign flows | Feature | Should Have | 8 | 🔄 Partially done |
-| 7 | UI-01 | Mobile layout for survey portal | UI | Should Have | 2 | 🔄 In sprint |
-| 8 | US-07 | Technical documentation & client handover | Docs | Should Have | 3 | ⬜ Next sprint |
-| 9 | US-06 | Performance tracking dashboard | Analytics | Could Have | 8 | ⬜ Next sprint |
-| 10 | ENH-01 | CSV export of survey responses | Enhancement | Could Have | 2 | ⬜ Backlog |
-| 11 | TD-01 | Rebuild internal legacy workflow engine | Tech debt | Won't Have (now) | – | ⏸ Parked |
+| 1 | US-01 | Onboarding automation | Feature | Must Have | 5 | In this sprint |
+| 2 | BUG-01 | Survey form required field validation | Bug | Must Have | 2 | In this sprint |
+| 3 | US-03 | JavaScript fixes for the survey and landing pages | Frontend | Must Have | 8 | In this sprint |
+| 4 | US-05 | Testing all automations from start to end | Testing | Must Have | 5 | In this sprint |
+| 5 | US-02 | Feedback survey | Feature | Should Have | 5 | Built, waiting for full testing |
+| 6 | US-04 | Behaviour-based segments and campaigns | Feature | Should Have | 8 | Partly done |
+| 7 | UI-01 | Mobile layout for the survey pages | UI | Should Have | 2 | In this sprint |
+| 8 | US-07 | Documentation and client handover | Docs | Should Have | 3 | Next sprint |
+| 9 | US-06 | Performance dashboard | Analytics | Could Have | 8 | Next sprint |
+| 10 | ENH-01 | Export survey answers to CSV | Extra | Could Have | 2 | Backlog |
+| 11 | TD-01 | Rebuild our old internal workflow setup | Tech debt | Won't Have for now | - | Parked |
 
-**Backlog refinement rules we follow:**
-- New requests (from the client or the group chat) are written as user stories and discussed before being ranked – they never jump straight into the current sprint
-- Items at the top of the backlog must be "ready": clear story, acceptance criteria and an estimate
-- The backlog is re-ranked at every sprint planning session
-
-**Screenshot evidence (names and content blurred):**
-
-![Zoho Projects backlog](assets/screenshots/zoho-product-backlog.png)
-*Figure 8 – Prioritised backlog / task list in Zoho Projects.*
+**How we keep the backlog in order:**
+- New requests from the client (by Outlook or in Google Meet) are written as user stories and discussed in our team meeting before they are ranked. They do not get added straight into the current sprint
+- Items at the top need a clear story, acceptance criteria and an estimate before we start them
+- We go through the order again at every sprint planning meeting
 
 ### Reflection
 
 **Collect:**
-I collected every request, bug and idea in one place – the Zoho Projects task list – instead of leaving them scattered across emails, chat messages and my notebook. This alone revealed how much work the project really contained.
+I put every request, bug and idea in one place in Zoho Projects instead of having them all over emails, chats and my notebook. Just doing that showed how much work there actually was on this project.
 
 **Select:**
-I selected MoSCoW as the prioritisation method because it is simple for a non-technical client and CEO to understand. The key decision I want to highlight is **ranking end-to-end testing (US-05) as a Must Have** alongside launch features – after our trigger bug in Sprint 1, the team agreed that an untested automation is a risk to real customers, not a finished feature.
+We went with MoSCoW because it is simple and easy for the CEO and the client to follow. The decision I want to point out is putting full testing (US-05) as a Must Have next to the launch features. After the trigger bug in Sprint 1 we agreed that an automation that has not been tested is a risk to real people and not a finished feature.
 
 **Reflect:**
-Managing a backlog in a startup taught me that there are always more tasks than hours, and that saying "not now" is a valid decision. Moving the legacy engine rebuild to "Won't Have (now)" felt uncomfortable at first, but it protected the client's launch. I also learned that a backlog is only useful if it is honest – items that are "almost done" stay open until they meet the Definition of Done. When my supervisor asks what I am working on, I can point to the top of the backlog and explain *why* it is there.
+Working on the backlog showed me that in a startup there is always more work than time, and saying "not now" is a fair decision. Moving the rebuild of our old workflow setup to Won't Have felt strange at first but it kept the focus on the client. I also learned that the backlog only helps if it is honest. If something is almost done it stays open until it meets the Definition of Done. When my supervisor asks what I am busy with, I can show the top of the backlog and explain why it is there.
 
 **Connect:**
-The product backlog is the link between the client's goals and our day-to-day work: **user stories** go in, the **sprint backlog** is pulled from the top, and the **retrospectives** in my logbook change how it is ranked. It also shows my growth since Semester 1 – in the Catering Website group project we worked through features in whatever order they came up; a ranked backlog would have helped us deliver the most important features first.
+The backlog is the link between what the client wants and what we do every day. User stories go in, each sprint is taken from the top, and what we learn in our retros changes the order. In the Catering Website group project in Semester 1 we just worked on things in whatever order they came up. Having a ranked backlog would have helped us get the important features done first.
 
 ---
 
@@ -500,51 +499,46 @@ The product backlog is the link between the client's goals and our day-to-day wo
 
 ### Evidence
 
-We work in **two-week sprints**. At sprint planning (Google Meet) we agree a **sprint goal**, check capacity and pull the highest-ranked "ready" items from the product backlog. Progress is tracked daily on the Zoho Projects Kanban board.
+We work in **two week sprints**. In our sprint planning meeting on Zoho Cliq we agree on a sprint goal, check how much time everyone has and take the top items from the product backlog. We track progress every day using the statuses in Zoho Projects.
 
-| Sprint | Sprint goal | Outcome |
+| Sprint | Sprint goal | How it went |
 |---|---|---|
-| Sprint 1 | Onboarding journey working in staging | ✅ Met – but trigger delay bug found late (see logbook) |
-| Sprint 2 | Survey journey + survey page JavaScript | ⚠️ Partly met – client approvals delayed; charter v2 introduced |
-| **Sprint 3 (current)** | **Onboarding and feedback journeys tested end-to-end; survey pages render correctly on mobile** | 🔄 In progress |
-| Sprint 4 (planned) | Segmentation analytics, dashboards, documentation and client handover | ⬜ Planned |
+| Sprint 1 | Get the onboarding automation working in staging | Goal met, but we found the trigger delay bug late (see logbook) |
+| Sprint 2 | Survey automation and JavaScript for the survey page | Only partly met because we were waiting on replies, which led to charter version 2 |
+| **Sprint 3 (current)** | **Onboarding and survey automations fully tested and survey pages working on mobile** | In progress |
+| Sprint 4 (planned) | Segments, dashboards, documentation and handing over to the client | Planned |
 
 ![Sprint 3 board](assets/semester2/sprint.png)
-*Figure 9 – Sprint 3 board showing tasks across To Do, In Progress, Review/Testing and Done (diagram mirrors our Zoho Projects board).*
+*Figure 7: Sprint 3 tasks across To Do, In Progress, Review/Testing and Done (diagram made by me using the same statuses as Zoho Projects).*
 
 **Sprint 3 backlog**
 
 | Task | Story | Owner | Points | Status |
 |---|---|---|---|---|
-| Webhook → field mapping → tags | US-01 | Me | 3 | ✅ Done |
-| Date-format JavaScript transform in payload | US-01 | Me | 1 | ✅ Done |
-| Investigate survey validation bug | BUG-01 | Team member | 1 | ✅ Done |
-| Welcome trigger (5-min delay) tested in staging | US-01 | Me → reviewer | 2 | 🔍 Review/Testing |
-| JavaScript async loading/error states on survey page | US-03 | Me | 3 | 🔄 In Progress |
-| Fix survey required-field validation | BUG-01 | Team member | 2 | 🔄 In Progress |
-| Cross-device test of survey pages | US-05 | Me | 3 | ⬜ To Do |
-| Behaviour-based segment triggers | US-04 | Me | 5 | ⬜ To Do |
-| Mobile CSS for survey portal | UI-01 | Team member | 2 | ⬜ To Do |
-| **Total committed** | | | **22** | **5 pts done · 2 in review · 15 remaining** |
-
-**Screenshot evidence (names and content blurred):**
-
-![Zoho Projects sprint board](assets/screenshots/zoho-sprint-board.png)
-*Figure 10 – Live Kanban board in Zoho Projects for the current sprint.*
+| Webhook, field mapping and tags | US-01 | Me | 3 | Done |
+| JavaScript to fix the date format | US-01 | Me | 1 | Done |
+| Look into the survey validation bug | BUG-01 | Team member | 1 | Done |
+| Test the welcome trigger (5 minute delay) in staging | US-01 | Me, then reviewer | 2 | Review/Testing |
+| JavaScript loading and error states on the survey page | US-03 | Me | 3 | In Progress |
+| Fix the survey required field validation | BUG-01 | Team member | 2 | In Progress |
+| Test the survey pages on different devices | US-05 | Me | 3 | To Do |
+| Behaviour-based segment triggers | US-04 | Me | 5 | To Do |
+| Mobile CSS for the survey pages | UI-01 | Team member | 2 | To Do |
+| **Total** | | | **22** | **5 done, 2 in review, 15 left** |
 
 ### Reflection
 
 **Collect:**
-I collected the sprint plans, the board status at the start and end of each sprint and the notes from our review meetings. Comparing what we planned with what we finished showed a pattern: we usually finished building on time but not testing.
+I kept the plan for each sprint, what the tasks looked like at the start and end, and the notes from our sprint meetings. When I compared what we planned with what we finished, I noticed we usually finished building on time but not the testing.
 
 **Select:**
-I selected Sprint 3 as my main evidence because it is the sprint where we applied the lessons from Sprints 1 and 2 – it has a clear, testable sprint goal, testing tasks are planned as their own cards, and there is a **Review/Testing** column so nothing moves straight from "In Progress" to "Done".
+I picked Sprint 3 as my main example because it is the sprint where we used what we learned in Sprints 1 and 2. It has a clear goal that can be tested, testing has its own tasks, and there is a Review/Testing status so nothing goes from In Progress straight to Done.
 
 **Reflect:**
-The sprint backlog makes a large project feel manageable: instead of looking at everything needed for launch, I focus on this sprint's goal. Sprint 2 taught me that a sprint can fail for reasons outside the code – our tasks were ready but waiting for approval. Making that visible on the board ("Waiting for feedback") is what convinced the team to change our communication channel. I have also improved my estimating: I now include testing time in my points, and our commitment for Sprint 3 is smaller but more realistic.
+The sprint backlog makes a big project feel doable because I only focus on what is in this sprint and not everything we still need for launch. Sprint 2 showed me that a sprint can fall behind for reasons that have nothing to do with the code. Our tasks were ready but stuck waiting for answers, and seeing that clearly in Zoho Projects is what got the team to change how we communicate. My estimates have also got better. I now count testing time in my points, so our Sprint 3 plan is smaller but more realistic.
 
 **Connect:**
-The sprint backlog turns the **product backlog** into daily action, the **team charter** defines when a card may move to Done, and each day's movement on the board is recorded in my **logbook**. Compared with Semester 1, where deadlines were the only checkpoints, working in sprints gives a short feedback loop every two weeks, which I would use for my own projects going forward.
+The sprint backlog turns the product backlog into daily work. The team charter decides when a task can be marked as done, and what moves each day goes into my logbook. In Semester 1 the only checkpoints were deadlines. Working in sprints gives you a check-in every two weeks, and I would use that on my own projects going forward.
 
 ---
 
@@ -552,87 +546,82 @@ The sprint backlog turns the **product backlog** into daily action, the **team c
 
 ### Evidence
 
-I keep a logbook that combines my daily stand-up posts in Zoho Cliq (*Yesterday / Today / Blockers*), my own technical notes and our sprint retrospectives. Below are excerpts covering the full project so far.
+My logbook is made up of my daily updates in Zoho Cliq (what I did, what I am doing next and what is blocking me), my own technical notes and our sprint retros. Here are parts of it from the project so far.
 
-#### Sprint 1 – Week 1 (daily log)
+#### Sprint 1, Week 1 (daily)
 
-| Day | Stand-up / work done | Blockers | Hours |
+| Day | What I worked on | Blockers | Hours |
 |---|---|---|---|
-| Mon | Planned onboarding journey; read email platform and webhook documentation. | API access not yet received | 6 |
-| Tue | Received access; created webhook and ran first connection test – successful. | None | 8 |
-| Wed | Mapped form fields to list and tags. Dates arrived in the wrong format – wrote a small JavaScript transform to fix them. | Need a live form submission to test | 7 |
-| Thu | Tested welcome trigger – emails not sending as expected. Found the trigger delay set to 0 seconds; changed to 5 minutes. | Resolved same day | 8 |
-| Fri | Onboarding journey deployed to staging and review requested. Started survey page JavaScript investigation. | Waiting for review before going live | 6 |
+| Mon | Planned the onboarding automation and read through the email platform and webhook documentation. | Still waiting for API access | 6 |
+| Tue | Got access and set up the webhook. First connection test worked. | None | 8 |
+| Wed | Mapped the form fields to the list and tags. The dates were coming through in the wrong format, so I wrote a small JavaScript fix for it. | Needed a real form submission to test with | 7 |
+| Thu | Tested the welcome trigger and the emails were not sending properly. Found that the delay was set to 0 seconds and changed it to 5 minutes. | Sorted out the same day | 8 |
+| Fri | Put the onboarding automation on staging and asked for it to be reviewed. Started looking at the JavaScript for the survey page. | Waiting for the review before going live | 6 |
 
-**Sprint 1 retrospective**
-- 👍 **Went well:** Onboarding journey works correctly in staging; blockers raised quickly in Zoho Cliq
-- 👎 **To improve:** Trigger conditions tested too late – the delay bug should have been caught earlier
-- 🎯 **Action:** Add explicit testing tasks to every automation story; no card moves to Done without a test note
+**Sprint 1 retro (team meeting on Zoho Cliq)**
+- **Went well:** The onboarding automation works in staging and blockers were raised quickly in Zoho Cliq
+- **Could be better:** We tested the trigger too late, so the delay bug should have been picked up earlier
+- **Action:** Every automation story gets its own testing tasks and nothing is marked done without being tested
 
-#### Sprint 2 – weekly summary
+#### Sprint 2 (weekly)
 
-| Week | Work done | Blockers | Hours |
+| Week | What I worked on | Blockers | Hours |
 |---|---|---|---|
-| Week 3 | Built survey journey (24 h trigger, webhook to records). Wrote JavaScript to inject CSS and restructure the survey page DOM where the template could not. | Copy and sequence approval from the client side pending over email | 36 |
-| Week 4 | Formatted incoming JSON for the survey page; added async UI updates. Several tasks moved to "Waiting for feedback". | Approvals delayed several days → raised in retro | 34 |
+| Week 3 | Built the survey automation (24 hour trigger and webhook to update records). Wrote JavaScript to add CSS and change the layout of the survey page where the template could not. | Waiting on sign-off from the project lead by email for the email wording and order | 36 |
+| Week 4 | Formatted the JSON data for the survey page and added loading updates. A few tasks were stuck waiting for feedback. | Replies still taking a few days, raised in the retro | 34 |
 
-**Sprint 2 retrospective**
-- 👍 **Went well:** Survey journey and page enhancements built on time
-- 👎 **To improve:** Email approvals created a bottleneck; sprint goal only partly met
-- 🎯 **Action:** Create a dedicated group chat (dev team, CEO, account lead) for approvals and copy decisions into Zoho Projects → **team charter updated to v2**
+**Sprint 2 retro (team meeting on Zoho Cliq)**
+- **Went well:** The survey automation and the page changes were built on time
+- **Could be better:** Waiting on email replies held us up and we only partly met the sprint goal
+- **Action:** Make a WhatsApp group with the dev team, the CEO and the project lead for quick answers, and copy any decisions into Zoho Projects. This became version 2 of our team charter
 
-#### Sprint 3 – current (weekly summary)
+#### Sprint 3, current (weekly)
 
-| Week | Work done | Blockers | Hours |
+| Week | What I worked on | Blockers | Hours |
 |---|---|---|---|
-| Week 5 | Approvals received within hours via group chat; welcome sequence approved. Added loading and error states to survey page JavaScript. Welcome trigger moved to Review/Testing. | None | 38 |
-| Week 6 | Planned end-to-end test cases (valid input, missing fields, duplicate sign-ups, mobile/desktop). Started behaviour-based segment rules. | Test data needed for segmentation – requested in stand-up | – |
+| Week 5 | Got answers within a few hours through the WhatsApp group and the welcome emails were signed off. Added loading and error messages to the survey page JavaScript. Moved the welcome trigger to Review/Testing. | None | 38 |
+| Week 6 | Planned the full test cases (correct input, missing fields, duplicate sign-ups, mobile and desktop). Started on the behaviour-based segments. | Need test data for the segments, asked for it in my daily update | - |
 
-#### Personal technical notes (lessons I re-use)
-- **Always check trigger delays and conditions first** when an automation "does not send"
-- **Normalise dates before they reach the platform** – the same transform fixed a second form later
-- **Test async UI in three states:** loading, success and error
-- **Copy every chat decision into the Zoho Projects task** so there is one source of truth
-
-**Screenshot evidence (names and content blurred):**
-
-![Zoho Cliq daily stand-ups](assets/screenshots/zoho-cliq-standups.png)
-*Figure 11 – Daily stand-up updates posted in Zoho Cliq.*
+#### My technical notes (things I keep using)
+- If an automation is not sending, check the trigger delay and conditions first
+- Fix the date format before the data gets to the email platform, as the same fix worked on another form later
+- Test loading states three ways: while loading, when it works and when it fails
+- Copy every decision from WhatsApp into the Zoho Projects task so everything is in one place
 
 ### Reflection
 
 **Collect:**
-Every day I collected the same three facts – what I did, what I will do next and what is blocking me – and posted them in Zoho Cliq. I added technical notes whenever I solved a problem and recorded the outcome of each retrospective.
+Every day I wrote down the same three things in Zoho Cliq: what I did, what I am doing next and what is blocking me. I also wrote notes when I solved a problem and kept track of what came out of each retro.
 
 **Select:**
-I selected entries that show a story of improvement rather than a list of hours: the trigger delay bug in Sprint 1, the communication bottleneck in Sprint 2 and the faster approvals in Sprint 3. Each one led to a concrete action that changed how the team works.
+I picked the parts that show how things got better over time and not just a list of hours. The trigger delay bug in Sprint 1, the slow replies in Sprint 2 and the quicker answers in Sprint 3 each led to something we changed in how we work.
 
 **Reflect:**
-Keeping a logbook made me honest about the difference between what I planned and what I actually finished. Looking back, I see clear patterns: I under-estimated testing, I work best on complex JavaScript in the morning, and blockers that feel huge often disappear within an hour once I communicate them clearly. The logbook also made retrospectives more useful – instead of relying on memory, I could point to the exact day and cause of a problem. My technical notes have already saved time: when a second form had the same date issue, I re-used the transform instead of debugging from scratch.
+Keeping a logbook made me be honest about what I planned versus what I actually got done. Looking back, I can see that I underestimated testing, that I work best on harder JavaScript in the morning, and that blockers that feel big are often sorted out quickly once I tell the team. The logbook also made our retros better because I could point to the exact day something happened instead of trying to remember. My technical notes have already saved me time. When another form had the same date problem, I used the same fix instead of starting from scratch.
 
 **Connect:**
-The logbook ties all the other artefacts together: it records progress on **user stories** and **sprint backlog** tasks, its blockers feed into **backlog** re-prioritisation, and its retrospectives produced the **team charter** update. It also continues the reflective habit I started with the STAR reflections in Semester 1 – but now I reflect continuously during the work, not only at the end.
+The logbook brings all the other parts together. It tracks my progress on the user stories and sprint tasks, the blockers in it affect how we order the backlog, and the retros in it led to the changes in our team charter. It also carries on from the STAR reflections I did in Semester 1, but now I reflect while I am working and not only at the end.
 
 ---
 
-## Portfolio Summary: Connecting the Evidence
+## Summary
 
-```
- Team Charter ──► how we work (values, DoD, channels)
-      │                         ▲
-      ▼                         │ retrospective actions (e.g. charter v2)
- User Stories ──► Product Backlog ──► Sprint Backlog ──► Daily work ──► Agile Logbook
- (what users need)  (ranked by MoSCoW)  (2-week goal)     (Zoho board)   (stand-ups, retros)
-```
+| Artefact | What it is for | How it connects to the rest |
+|---|---|---|
+| **Team Charter** | How we work as a team (values, roles, tools, Definition of Done) | Sets the rules for the stories, the backlog and when work is done. Updated after a retro |
+| **User Stories and Tasks** | What the users need, broken into tasks | Fill up the product backlog and use the Definition of Done for acceptance criteria |
+| **Product Backlog** | All the work, ranked with MoSCoW | Each sprint takes the top items |
+| **Sprint Backlog** | The work for the current two weeks | Updated daily in Zoho Projects and reported in the logbook |
+| **Agile Logbook** | Daily updates, notes and retros | Retros lead to changes in the charter and the backlog |
 
-**Semester 1** gave me the technical foundation (Java, OOP, web development, GitHub) and career-readiness skills (CV, mock interview, documentation). **Semester 2** showed me how that technical work fits into a real team process. The biggest lessons from my placement are:
+Semester 1 gave me the technical skills (Java, OOP, web development and GitHub) and helped me get ready for work (CV, mock interview and documentation). Semester 2 showed me how that work fits into a real team. The main things I learned during my placement are:
 
-1. **Process is a tool, not paperwork** – the charter, backlog and board each solved a real problem we had.
-2. **Communication is part of delivery** – the fastest code in the world still waits for an approval; fixing the channel unblocked the sprint.
-3. **"Done" means tested** – automations affect real customers, so testing is a Must Have, not an afterthought.
-4. **Small, honest feedback loops** (daily stand-ups, two-week sprints, retrospectives) help a new developer improve quickly.
+- **The process helps.** The charter, the backlog and the sprints each fixed a real problem we had.
+- **Communication is part of the work.** Our automations were ready but could not move without answers. Changing how we communicate got things going again.
+- **Done means tested.** Automations affect real people, so testing is a Must Have.
+- **Short check-ins help you improve quickly.** Daily updates, two week sprints and retros helped me learn fast as a new developer.
 
-**Next steps for the project:** complete end-to-end testing, finish behaviour-based segmentation and dashboards, write the technical documentation and run the formal handover with the client through Zoho Projects.
+**What is next on the project:** finish the full testing, finish the segments and dashboards, write the documentation and do the handover with the client through Zoho Projects.
 
 ---
 
@@ -648,4 +637,4 @@ The logbook ties all the other artefacts together: it records progress on **user
 
 ---
 
-*References: Agile definitions follow the PRP370S Assessment 2 brief (CPUT, 2026). All diagrams marked "created by me" were produced by the author. Client information has been withheld for confidentiality.*
+*The Agile definitions used in this portfolio come from the PRP370S Assessment 2 brief (CPUT, 2026). Diagrams marked "made by me" were made by me. Client information has been kept private.*
